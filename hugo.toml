@@ -1,4 +1,4 @@
-baseURL = "orangc.xyz"
+baseURL = "https://blog.orangc.xyz"
 languageCode = "en-gb"
 title = "orangc's blog"
 theme="archie"
@@ -7,7 +7,7 @@ copyright = "orangc"
 pygmentsstyle = "monokai"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
-
+relativeURLs = true
 disqusShortname = "orangc"
 
 [params]

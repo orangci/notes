@@ -9,7 +9,8 @@
 	<title>{{ $title }} - {{ $siteTitle }}</title>
 	{{- end -}}
 
-	<link rel="stylesheet" href="{{ .Site.BaseURL }}/themes/archie/assets/css/uwu.css">
+	{{ $style := resources.Get "css/uwu.css" | fingerprint }}
+	<link rel="stylesheet" type="text/css" media="screen" href="{{ $style.Permalink }}" />
 
 	{{- if isset .Site.Params "favicon" -}}
 	<link rel="icon" type="image/png" href={{ .Site.Params.favicon }} />
