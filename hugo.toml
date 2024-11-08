@@ -1,4 +1,4 @@
-baseURL = "http://127.0.0.1:5500/"
+baseURL = "orangc.xyz"
 languageCode = "en-gb"
 title = "orangc's blog"
 theme="archie"
@@ -10,15 +10,12 @@ pygmentscodefencesguesssyntax = true
 
 disqusShortname = "orangc"
 
-paginate=3 # articles per page
-
 [params]
 	mode="dark" # color-mode → light,dark,toggle or auto
 	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
 	subtitle = "occasional posts about anything and everything"
 	mathjax = false # enable MathJax support
 	katex = false # enable KaTeX support
-    customcss = ["/css/uwu.css"]
 
 # Social Tags
 
