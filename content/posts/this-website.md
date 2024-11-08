@@ -9,4 +9,4 @@ The blog website itself is built with [Tailwind CSS](https://tailwindcss.com/) a
 Before this third (or fourth?) version of my site, I had never used Tailwind before; and that is something that I really regret. Tailwind is amazing and I don't think I ever want to work without it again.
 
 Fun fact: this page has a perfect Lighthouse score!
-![Lighthouse Score](../assets/lighthouse-score.png)
+![Lighthouse Score](../../assets/lighthouse-score.png)

@@ -1,10 +1,11 @@
-{pkgs ? import <nixpkgs> {}}:
+{ pkgs ? import <nixpkgs> { } }:
 pkgs.mkShell {
   buildInputs = with pkgs; [
     tailwindcss
+    hugo
   ];
 
   shellHook = ''
-    tailwindcss -i css/owo.css -o css/uwu.css --watch
+    # tailwindcss -i css/owo.css -o css/uwu.css --watch
   '';
 }
