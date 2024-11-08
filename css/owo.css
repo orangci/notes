@@ -1,0 +1,184 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url(https://fonts.bunny.net/css?family=lexend:500|martian-mono:500|merriweather:700|raleway:500);
+
+
+/* Gradients
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.ug-peach { @apply text-transparent bg-clip-text bg-ug-peach; }
+.ug-rosewater { @apply text-transparent bg-clip-text bg-ug-rosewater; }
+.ug-flamingo { @apply text-transparent bg-clip-text bg-ug-flamingo; }
+.ug-pink { @apply text-transparent bg-clip-text bg-ug-pink; }
+.ug-mauve { @apply text-transparent bg-clip-text bg-ug-mauve; }
+.ug-red { @apply text-transparent bg-clip-text bg-ug-red; }
+.ug-maroon { @apply text-transparent bg-clip-text bg-ug-maroon; }
+.ug-yellow { @apply text-transparent bg-clip-text bg-ug-yellow; }
+.ug-green { @apply text-transparent bg-clip-text bg-ug-green; }
+.ug-teal { @apply text-transparent bg-clip-text bg-ug-teal; }
+.ug-sky { @apply text-transparent bg-clip-text bg-ug-sky; }
+.ug-sapphire { @apply text-transparent bg-clip-text bg-ug-sapphire; }
+.ug-blue { @apply text-transparent bg-clip-text bg-ug-blue; }
+.ug-lavender { @apply text-transparent bg-clip-text bg-ug-lavender; }
+.ug-text { @apply text-transparent bg-clip-text bg-ug-text; }
+.ug-subtext1 { @apply text-transparent bg-clip-text bg-ug-subtext1; }
+.ug-subtext0 { @apply text-transparent bg-clip-text bg-ug-subtext0; }
+.ug-overlay2 { @apply text-transparent bg-clip-text bg-ug-overlay2; }
+.ug-overlay1 { @apply text-transparent bg-clip-text bg-ug-overlay1; }
+.ug-overlay0 { @apply text-transparent bg-clip-text bg-ug-overlay0; }
+.ug-surface2 { @apply text-transparent bg-clip-text bg-ug-surface2; }
+.ug-surface1 { @apply text-transparent bg-clip-text bg-ug-surface1; }
+.ug-surface0 { @apply text-transparent bg-clip-text bg-ug-surface0; }
+.ug-base { @apply text-transparent bg-clip-text bg-ug-base; }
+.ug-mantle { @apply text-transparent bg-clip-text bg-ug-mantle; }
+.ug-crust { @apply text-transparent bg-clip-text bg-ug-crust; }
+
+/* Base
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+body {@apply p-3 text-lg bg-cbase text-ctext;}
+b, strong { @apply font-bold; }
+i, em { @apply italic; }
+code { @apply p-1 m-1 font-mono rounded-lg bg-ccrust; }
+aside {@apply text-sm text-csubtext1; }
+img { @apply select-none; }
+ol { @apply list-inside text-left list-roman; }
+ul { @apply list-disc list-inside text-left; }
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.link { @apply inline-block relative border-b-0 border-cpeach; }
+.link::after {
+  content: '';
+  @apply absolute bottom-0 left-0 w-0 h-[2px] bg-cpeach transition-all duration-300;
+}
+.link:hover::after { @apply w-full; }
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1 { @apply p-1 text-3xl; }
+h2 { @apply p-1 text-3xl; }
+h3 { @apply p-1 text-3xl; }
+h4 { @apply p-1 text-2xl; }
+h5 { @apply p-1 text-2xl; }
+h6 { @apply p-1 text-xl; }
+
+/* Cards
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.cards { @apply flex flex-wrap gap-4; }
+.card { @apply p-5 m-2 w-full rounded-2xl shadow-md transition-shadow transition-transform duration-200 sm:w-1/2 md:w-1/3 lg:w-1/4 bg-cmantle; }
+.card:hover { @apply shadow-lg transform -translate-y-1; }
+
+
+/* Tooltips
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.tooltip { @apply inline-block relative; }
+.tooltip-text { @apply absolute bottom-full left-1/2 invisible px-2 py-1 text-sm text-center rounded-lg opacity-0 transition-opacity duration-300 transform -translate-x-1/2 bg-csurface0 text-ctext; }
+.tooltip:hover .tooltip-text { @apply visible opacity-100; }
+
+/* Bloggin Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.highlight pre code[class=language-javaScript]::before,
+.highlight pre code[class="language-js"]::before {
+content: "js";
+@apply bg-cyellow text-ccrust;
+}
+.highlight pre code[class*='language-yml']::before,
+.highlight pre code[class*='language-yaml']::before {
+content: 'yaml';
+@apply bg-cred text-ctext;
+}
+.highlight pre code[class*='language-shell']::before,
+.highlight pre code[class*='language-bash']::before,
+.highlight pre code[class*='language-sh']::before {
+content: 'shell';
+@apply bg-cgreen text-ctext;
+}
+.highlight pre code[class*='language-json']::before{
+content: 'json';
+@apply bg-csky text-ccrust;
+}
+.highlight pre code[class*='language-python']::before,
+.highlight pre code[class*='language-py']::before {
+content: 'py';
+@apply bg-cblue text-cyellow;
+}
+.highlight pre code[class*='language-css']::before{
+content: 'css';
+@apply bg-csky text-ccrust;
+}
+.highlight pre code[class*='language-go']::before{
+content: 'Go';
+@apply bg-csapphire text-cblue;
+}
+.highlight pre code[class*='language-md']::before,
+.highlight pre code[class*='language-md']::before{
+content: 'Markdown';
+@apply bg-cblue text-ctext;
+}
+
+body{ @apply block m-8; }
+::selection { @apply bg-cpeach text-ccrust; }
+hr { @apply my-1 border-t-8 border-dotted border-cmauve; }
+blockquote { @apply pl-4 m-0 border-l-2 border-cblue text-csubtext1; }
+a { @apply link; }
+ul ul, ul ol, ol ul, ol ol { @apply pl-8; }
+img { @apply w-full border-4 border-solid border-ctext; }
+
+figure { @apply box-border inline-block m-0 w-full sm:py-2; }
+figure img { @apply max-h-32; }
+figure h4 { @apply mt-0 mr-0 mb-1 ml-0 text-base; }
+figure h4::before { content: '↳ '; }
+
+code { @apply p-1 bg-cmantle; }
+pre { @apply overflow-x-auto p-1 leading-loose rounded-xl bg-cmantle; }
+.highlight pre ::selection { @apply bg-ctext text-inherit; }
+pre code { @apply p-0 bg-transparent text-inherit; }
+
+.content { @apply px-0 py-1 mx-auto mb-4 max-w-3xl break-words; }
+
+header { @apply flex flex-wrap justify-between mx-1 my-0 leading-10; }
+header .main { @apply text-2xl; }
+h1, h2, h3, h4, h5, h6 { @apply mt-2; }
+
+h1::before { @apply text-cpeach; content: '# '; }
+h2::before { @apply text-cpeach; content: '## '; }
+h3::before { @apply text-cpeach; content: '### '; }
+h4::before { @apply text-cpeach; content: '#### '; }
+h5::before { @apply text-cpeach; content: '##### '; }
+h6::before { @apply text-cpeach; content: '###### '; }
+
+.meta { @apply tracking-tight text-coverlay2; }
+.toc { @apply inline-block px-10 pt-10 rounded-md bg-cmantle text-ctext; }
+footer { @apply flex items-center px-0 py-2 mt-8 border-t-2 border-dotted border-cmauve; }
+.soc { @apply flex items-center border-b-0; }
+.border { @apply mx-1 border-2; }
+.footer-info {@apply p-4; }
+.title h1 { @apply mb-0; }
+
+time { @apply text-csubtext0; }
+article .title { @apply mb-1; }
+
+
+.callout { @apply p-1 bg-csapphire text-ctext; }
+.callout p { @apply m-0 font-mono; }
+.callout a { @apply border-b-2 border-ctext; }
+.callout a:hover { @apply bg-ctext text-csapphire; }
+
+.site-description { @apply flex justify-between; }
+
+.tags li::before{ content: "🏷 "; }
+.tags a{ @apply border-b-2 border-cpeach; }
+.tags a:hover{ @apply text-ccrust bg-cblue; }
+svg{ @apply max-h-4; }
+.soc:hover{ @apply text-cmantle; }
+.draft-label{ @apply p-1 ml-2 no-underline rounded-md text-cmauve bg-clavender; }
+.highlight { 
+    @apply relative;
+    -webkit-overflow-scrolling: touch;
+}
+.highlight pre code[class*="language-"] { -webkit-overflow-scrolling: touch; }
+.highlight pre code[class*="language-"]::before { @apply absolute top-0 right-4 p-1 text-sm tracking-wide text-right uppercase rounded-t-none rounded-r-none rounded-l-md bg-cmantle rounded-s-md text-ctext; }
+
+table { @apply border-collapse border-spacing-0; }
+table th{ @apply px-3 py-2 text-lg border-2 border-coverlay2; }
+table td{ @apply px-3 py-2 border-2 border-coverlay2; }

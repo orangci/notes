@@ -1,0 +1,22 @@
+{{ define "main" }}
+<div class="site-description">
+	{{- if isset .Site.Params "subtitle" -}}
+	<p>{{ .Site.Params.Subtitle | .Page.RenderString }}</p>
+	{{- end -}}
+</div>
+{{ if isset .Data "Term" }}
+<h1>Entries tagged - "{{ .Data.Term }}"</h1>
+{{ else }}
+<h1 class="page-title">posts</h1>
+{{ end }}
+
+<ul class="posts">
+	{{- range .Data.Pages -}}
+		{{- if (not (in (.Site.Params.excludedTypes | default (slice "page")) .Type)) -}}
+		<li class="post">
+			<a href="{{ .RelPermalink }}">{{.Title}}</a> <span class="meta">{{ dateFormat ":date_medium" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</span>
+		</li>
+		{{- end -}}
+	{{- end -}}
+</ul>
+{{ end }}
