@@ -39,7 +39,7 @@
 body {@apply p-3 text-lg bg-cbase text-ctext;}
 b, strong { @apply font-bold; }
 i, em { @apply italic; }
-code { @apply p-1 m-1 font-mono rounded-lg bg-ccrust; }
+code { @apply p-1 my-1 font-mono rounded-lg bg-ccrust; }
 aside {@apply text-sm text-csubtext1; }
 img { @apply select-none; }
 ol { @apply list-inside text-left list-roman; }
@@ -52,15 +52,16 @@ ul { @apply list-disc list-inside text-left; }
   @apply absolute bottom-0 left-0 w-0 h-[2px] bg-cpeach transition-all duration-300;
 }
 .link:hover::after { @apply w-full; }
+.link2 { @apply inline-block relative underline decoration-cpeach decoration-2 hover:no-underline; }
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-h1 { @apply p-1 text-3xl; }
-h2 { @apply p-1 text-3xl; }
-h3 { @apply p-1 text-3xl; }
-h4 { @apply p-1 text-2xl; }
-h5 { @apply p-1 text-2xl; }
-h6 { @apply p-1 text-xl; }
+h1 { @apply p-1 my-1 text-3xl; }
+h2 { @apply p-1 my-1 text-3xl; }
+h3 { @apply p-1 my-1 text-3xl; }
+h4 { @apply p-1 my-1 text-2xl; }
+h5 { @apply p-1 my-1 text-2xl; }
+h6 { @apply p-1 my-1 text-xl; }
 
 /* Cards
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -120,9 +121,10 @@ body{ @apply block m-8; }
 ::selection { @apply bg-cpeach text-ccrust; }
 hr { @apply my-1 border-t-8 border-dotted border-cmauve; }
 blockquote { @apply pl-4 m-0 border-l-2 border-cblue text-csubtext1; }
-a { @apply link; }
+a { @apply link2; }
+article a { @apply link2; }
 ul ul, ul ol, ol ul, ol ol { @apply pl-8; }
-img { @apply w-full border-4 border-solid border-ctext; }
+img { @apply my-1 w-full border-2 border-solid border-ctext; }
 
 figure { @apply box-border inline-block m-0 w-full sm:py-2; }
 figure img { @apply max-h-32; }
@@ -147,6 +149,13 @@ h4::before { @apply text-cpeach; content: '#### '; }
 h5::before { @apply text-cpeach; content: '##### '; }
 h6::before { @apply text-cpeach; content: '###### '; }
 
+article h1::before { @apply text-cpeach; content: '# '; }
+article h2::before { @apply text-cpeach; content: '## '; }
+article h3::before { @apply text-cpeach; content: '### '; }
+article h4::before { @apply text-cpeach; content: '#### '; }
+article h5::before { @apply text-cpeach; content: '##### '; }
+article h6::before { @apply text-cpeach; content: '###### '; }
+
 .meta { @apply tracking-tight text-coverlay2; }
 .toc { @apply inline-block px-10 pt-10 rounded-md bg-cmantle text-ctext; }
 footer { @apply flex items-center px-0 py-2 mt-8 border-t-2 border-dotted border-cmauve; }
@@ -157,6 +166,7 @@ footer { @apply flex items-center px-0 py-2 mt-8 border-t-2 border-dotted border
 
 time { @apply text-csubtext0; }
 article .title { @apply mb-1; }
+article { @apply leading-relaxed; }
 
 
 .callout { @apply p-1 bg-csapphire text-ctext; }
