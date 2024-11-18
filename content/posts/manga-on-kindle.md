@@ -34,7 +34,7 @@ And so on.
 I plugged my Kindle into my PC with a USB A to C cable.
 
 1. In the top left, click the **Add Books** button, and select the merged_manga.pdf file from earlier.
-2. Next, click the **Convert Books** button and convert the PDF now in your Calibre library to a `.MOBI` file. Note that you should fix up the metadata and select a cover image while doing so; the cover image can be found in the same directory that the merged_manga.pdf was originally in; the filename should be something like `cover.png`.
+2. Next, click the **Convert Books** button and convert the PDF now in your Calibre library to a `.AZW3` file. Note that you should fix up the metadata and select a cover image while doing so; the cover image can be found in the same directory that the merged_manga.pdf was originally in; the filename should be something like `cover.png`.
 3. Ensure your Kindle is plugged into your PC/laptop with a cable and then click the **Send to Device** button.
 
 And now you can read your manga in peace. 'Tis easy.
