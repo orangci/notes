@@ -4,9 +4,9 @@ date = 2024-11-26T11:28:08+03:00
 draft = false
 +++
 
-***Warning: this article contains spoilers for all of [https://myanimelist.net/manga/55215/Utsuro_no_Hako_to_Zero_no_Maria](The Empty Box and Zeroth Maria).***
+***Warning: this article contains spoilers for all of [The Empty Box and Zeroth Maria](https://myanimelist.net/manga/55215/Utsuro_no_Hako_to_Zero_no_Maria).***
 
-Here is my review of the [https://myanimelist.net/manga/55215/Utsuro_no_Hako_to_Zero_no_Maria](The Empty Box and Zeroth Maria) for the Anicord Community Special of Fall 2024.
+Here is my review of the [The Empty Box and Zeroth Maria](https://myanimelist.net/manga/55215/Utsuro_no_Hako_to_Zero_no_Maria) for the Anicord Community Special of Fall 2024.
 
 I've been reading books my whole life, but I've never read a light novel. I saw some friends of mine reading light novels though and I thought it was quite interesting so I put Zeroth Maria on my plan to read list a few months ago. Now that I've finally gotten to read it.. I really liked it! This series is the kind of series that *makes you think* quite a bit. I guess this can be classified as a thriller series. The plot is complex in a very likable way, like some other books I've read (I'd give an example here, but I really don't remember unfortunately. An ~~anime~~ donghua with a similar vibe might be Link Click.) Also, characters. I have to marvel at the character development. Starting from volume one, I had assumed Hoshino would just be another bland character that doesn't change at all but he really grows and changes throughout the series, especially in volume six. The same goes for Maria and her relationship with Hoshino.
 
