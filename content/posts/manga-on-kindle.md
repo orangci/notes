@@ -29,7 +29,12 @@ Ran in the folder in which my manga was stored. Note that the asterisk at the en
 
 And so on.
 
-### Calibre
+If you are going to skip the Calibre step, then you will have to do the following:
+- Rename the merged_manga.pdf to the name of the manga
+- Plug in your Kindle to your device and then transfer the PDF to the documents folder in your Kindle
+
+### Calibre (optional)
+I should note that this step is optional. Also, every time I've done this option, the AZW3 files break on my Kindle, I'm not really sure why.
 [Calibre](https://calibre-ebook.com/) is an e-book management software which is very useful for a variety of things; in this situation, sending our final PDF to the Kindle.
 I plugged my Kindle into my PC with a USB A to C cable.
 
