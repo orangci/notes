@@ -1,4 +1,4 @@
-baseURL = "https://blog.orangc.xyz"
+baseURL = "https://blog.orangc.net"
 languageCode = "en-gb"
 title = "orangc's blog"
 theme="archie"
@@ -28,7 +28,7 @@ disqusShortname = "orangc"
 
 [[menu.main]]
 name = "/home"
-url = "https://orangc.xyz"
+url = "https://orangc.net"
 weight = 1
 
 [[menu.main]]
