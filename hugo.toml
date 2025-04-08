@@ -3,8 +3,10 @@ languageCode = "en-gb"
 title = "orangc's blog"
 theme="archie"
 copyright = "orangc"
+copyrightURL = "https://orangc.net"
 # Code Highlight
-pygmentsstyle = "monokai"
+pygmentsstyle = "dracula"
+pygmentsuseclasses = true
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 relativeURLs = true
@@ -19,19 +21,19 @@ disqusShortname = "orangc"
 
 # Social Tags
 
-[[params.social]]
+# [[params.social]]
 # name = "GitHub"
 # icon = "github"
 # url = "https://github.com/orangci"
 
 # Main menu Items
 
-[[menu.main]]
-name = "/home"
-url = "https://orangc.net"
-weight = 1
+# [[menu.main]]
+# name = "/home"
+# url = "https://orangc.net"
+# weight = 1
 
-[[menu.main]]
-name = "/posts"
-url = "/posts"
-weight = 2
+# [[menu.main]]
+# name = "/posts"
+# url = "/posts"
+# weight = 2

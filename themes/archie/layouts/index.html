@@ -8,19 +8,20 @@
 			<main class="list">
 				<div class="site-description">
 					{{- if isset .Site.Params "subtitle" -}}
-					<p>{{ .Site.Params.Subtitle | .Page.RenderString }}</p>
+					<aside>{{ .Site.Params.Subtitle | .Page.RenderString }}</aside>
 					{{- end -}}
 				</div>
+				<br>
 				{{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
 				{{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
+				<ul class="posts">
 				{{ range $paginator.Pages }}
-				<section class="list-item">
-					<h2 class="title"><a href="{{ .RelPermalink }}">{{.Title}}</a></h2>
-					<time>{{ dateFormat ":date_medium" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</time>
-					<br>
-					<a class="readmore" href="{{ .RelPermalink }}">Read ⟶</a>
-				</section>
+					<li class="post">
+						<a href="{{ .RelPermalink }}">{{.Title}}</a> <time class="meta">{{ dateFormat ":date_medium" .Date }}</time> {{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}
+					</li>
+				
 				{{ end }}
+				</ul>
 				{{ template "partials/paginator.html" . }}
 			</main>
 			{{ partial "footer.html" . }}

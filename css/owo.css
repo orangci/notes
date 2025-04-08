@@ -2,37 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url(https://fonts.bunny.net/css?family=lexend:500|martian-mono:500|merriweather:700|raleway:500);
-
-
-/* Gradients
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.ug-peach { @apply text-transparent bg-clip-text bg-ug-peach; }
-.ug-rosewater { @apply text-transparent bg-clip-text bg-ug-rosewater; }
-.ug-flamingo { @apply text-transparent bg-clip-text bg-ug-flamingo; }
-.ug-pink { @apply text-transparent bg-clip-text bg-ug-pink; }
-.ug-mauve { @apply text-transparent bg-clip-text bg-ug-mauve; }
-.ug-red { @apply text-transparent bg-clip-text bg-ug-red; }
-.ug-maroon { @apply text-transparent bg-clip-text bg-ug-maroon; }
-.ug-yellow { @apply text-transparent bg-clip-text bg-ug-yellow; }
-.ug-green { @apply text-transparent bg-clip-text bg-ug-green; }
-.ug-teal { @apply text-transparent bg-clip-text bg-ug-teal; }
-.ug-sky { @apply text-transparent bg-clip-text bg-ug-sky; }
-.ug-sapphire { @apply text-transparent bg-clip-text bg-ug-sapphire; }
-.ug-blue { @apply text-transparent bg-clip-text bg-ug-blue; }
-.ug-lavender { @apply text-transparent bg-clip-text bg-ug-lavender; }
-.ug-text { @apply text-transparent bg-clip-text bg-ug-text; }
-.ug-subtext1 { @apply text-transparent bg-clip-text bg-ug-subtext1; }
-.ug-subtext0 { @apply text-transparent bg-clip-text bg-ug-subtext0; }
-.ug-overlay2 { @apply text-transparent bg-clip-text bg-ug-overlay2; }
-.ug-overlay1 { @apply text-transparent bg-clip-text bg-ug-overlay1; }
-.ug-overlay0 { @apply text-transparent bg-clip-text bg-ug-overlay0; }
-.ug-surface2 { @apply text-transparent bg-clip-text bg-ug-surface2; }
-.ug-surface1 { @apply text-transparent bg-clip-text bg-ug-surface1; }
-.ug-surface0 { @apply text-transparent bg-clip-text bg-ug-surface0; }
-.ug-base { @apply text-transparent bg-clip-text bg-ug-base; }
-.ug-mantle { @apply text-transparent bg-clip-text bg-ug-mantle; }
-.ug-crust { @apply text-transparent bg-clip-text bg-ug-crust; }
+@import url(https://fonts.bunny.net/css?family=lexend:500|martian-mono:500|merriweather:700);
 
 /* Base
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -44,6 +14,7 @@ aside {@apply text-sm text-csubtext1; }
 img { @apply select-none; }
 ol { @apply list-inside text-left list-roman; }
 ul { @apply list-disc list-inside text-left; }
+
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .link { @apply inline-block relative border-b-0 border-cpeach; }
@@ -63,65 +34,29 @@ h4 { @apply p-1 my-1 text-2xl; }
 h5 { @apply p-1 my-1 text-2xl; }
 h6 { @apply p-1 my-1 text-xl; }
 
-/* Cards
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.cards { @apply flex flex-wrap gap-4; }
-.card { @apply p-5 m-2 w-full rounded-2xl shadow-md transition-shadow transition-transform duration-200 sm:w-1/2 md:w-1/3 lg:w-1/4 bg-cmantle; }
-.card:hover { @apply shadow-lg transform -translate-y-1; }
-
-
-/* Tooltips
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.tooltip { @apply inline-block relative; }
-.tooltip-text { @apply absolute bottom-full left-1/2 invisible px-2 py-1 text-sm text-center rounded-lg opacity-0 transition-opacity duration-300 transform -translate-x-1/2 bg-csurface0 text-ctext; }
-.tooltip:hover .tooltip-text { @apply visible opacity-100; }
 
 /* Bloggin Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .highlight pre code[class=language-javaScript]::before,
-.highlight pre code[class="language-js"]::before {
-content: "js";
-@apply bg-cyellow text-ccrust;
-}
+.highlight pre code[class="language-js"]::before { content: "js"; @apply bg-cyellow text-ccrust; }
 .highlight pre code[class*='language-yml']::before,
-.highlight pre code[class*='language-yaml']::before {
-content: 'yaml';
-@apply bg-cred text-ctext;
-}
+.highlight pre code[class*='language-yaml']::before { content: 'yaml'; @apply bg-cred text-ctext; }
 .highlight pre code[class*='language-shell']::before,
 .highlight pre code[class*='language-bash']::before,
-.highlight pre code[class*='language-sh']::before {
-content: 'shell';
-@apply bg-cgreen text-ctext;
-}
-.highlight pre code[class*='language-json']::before{
-content: 'json';
-@apply bg-csky text-ccrust;
-}
+.highlight pre code[class*='language-sh']::before { content: 'shell'; @apply bg-cgreen text-ctext; }
+.highlight pre code[class*='language-json']::before{ content: 'json'; @apply bg-csky text-ccrust; }
 .highlight pre code[class*='language-python']::before,
-.highlight pre code[class*='language-py']::before {
-content: 'py';
-@apply bg-cblue text-cyellow;
-}
-.highlight pre code[class*='language-css']::before{
-content: 'css';
-@apply bg-csky text-ccrust;
-}
-.highlight pre code[class*='language-go']::before{
-content: 'Go';
-@apply bg-csapphire text-cblue;
-}
+.highlight pre code[class*='language-py']::before { content: 'py'; @apply bg-cblue text-cyellow; }
+.highlight pre code[class*='language-css']::before{ content: 'css'; @apply bg-csky text-ccrust; }
+.highlight pre code[class*='language-go']::before{ content: 'Go'; @apply bg-csapphire text-cblue; }
 .highlight pre code[class*='language-md']::before,
-.highlight pre code[class*='language-md']::before{
-content: 'Markdown';
-@apply bg-cblue text-ctext;
-}
+.highlight pre code[class*='language-md']::before{ content: 'Markdown'; @apply bg-cblue text-ctext; }
 
 body{ @apply block m-8; }
 ::selection { @apply bg-cpeach text-ccrust; }
 hr { @apply my-1 border-t-8 border-dotted border-cmauve; }
-blockquote { @apply pl-4 m-0 border-l-2 border-cblue text-csubtext1; }
-a { @apply link2; }
+blockquote { @apply pl-4 m-0 border-l-2 border-cgreen text-csubtext1; }
+a { @apply link; }
 article a { @apply link2; }
 ul ul, ul ol, ol ul, ol ol { @apply pl-8; }
 img { @apply my-1 w-full border-2 border-solid border-ctext; }
@@ -133,21 +68,20 @@ figure h4::before { content: '↳ '; }
 
 code { @apply p-1 bg-cmantle; }
 pre { @apply overflow-x-auto p-1 leading-loose rounded-xl bg-cmantle; }
-.highlight pre ::selection { @apply bg-ctext text-inherit; }
 pre code { @apply p-0 bg-transparent text-inherit; }
 
 .content { @apply px-0 py-1 mx-auto mb-4 max-w-3xl break-words; }
 
 header { @apply flex flex-wrap justify-between mx-1 my-0 leading-10; }
 header .main { @apply text-2xl; }
-h1, h2, h3, h4, h5, h6 { @apply mt-2; }
+h1, h2, h3, h4, h5, h6 { @apply my-4; }
 
-h1::before { @apply text-cpeach; content: '# '; }
-h2::before { @apply text-cpeach; content: '## '; }
-h3::before { @apply text-cpeach; content: '### '; }
-h4::before { @apply text-cpeach; content: '#### '; }
-h5::before { @apply text-cpeach; content: '##### '; }
-h6::before { @apply text-cpeach; content: '###### '; }
+h1::before { @apply text-cpeach;}
+h2::before { @apply text-cpeach;}
+h3::before { @apply text-cpeach;}
+h4::before { @apply text-cpeach;}
+h5::before { @apply text-cpeach;}
+h6::before { @apply text-cpeach;}
 
 article h1::before { @apply text-cpeach; content: '# '; }
 article h2::before { @apply text-cpeach; content: '## '; }
@@ -161,7 +95,7 @@ article h6::before { @apply text-cpeach; content: '###### '; }
 footer { @apply flex items-center px-0 py-2 mt-8 border-t-2 border-dotted border-cmauve; }
 .soc { @apply flex items-center border-b-0; }
 .border { @apply mx-1 border-2; }
-.footer-info {@apply p-4; }
+.footer-info {@apply text-csubtext1; }
 .title h1 { @apply mb-0; }
 
 time { @apply text-csubtext0; }
@@ -192,3 +126,125 @@ svg{ @apply max-h-4; }
 table { @apply border-collapse border-spacing-0; }
 table th{ @apply px-3 py-2 text-lg border-2 border-coverlay2; }
 table td{ @apply px-3 py-2 border-2 border-coverlay2; }
+
+
+/* code blocks */
+pre {
+  @apply my-4;
+  .c .hll, .cm, .cp, .c1, .cs { @apply text-csubtext1; }
+  /* Comment */
+  .err { @apply text-cred; }
+  /* Error */
+  .k { @apply text-cmauve; }
+  /* Keyword */
+  .l { @apply text-cmauve; }
+  /* Literal */
+  .n { @apply text-ctext; }
+  /* Name */
+  .o { @apply text-csky; }
+  /* Operator */
+  .p { @apply text-cred; }
+  /* Punctuation */
+  .ge { @apply italic; }
+  /* Generic.Emph */
+  .gs { @apply font-bold; }
+  /* Generic.Strong */
+  .kc { @apply text-cblue; }
+  /* Keyword.Constant */
+  .kd { @apply text-csapphire; }
+  /* Keyword.Declaration */
+  .kn { @apply text-cmauve; }
+  /* Keyword.Namespace */
+  .kp { @apply text-cpink; }
+  /* Keyword.Pseudo */
+  .kr { @apply text-cred; }
+  /* Keyword.Reserved */
+  .kt { @apply text-cmauve; }
+  /* Keyword.Type */
+  .ld { @apply text-cpeach; }
+  /* Literal.Date */
+  .m { @apply text-cpeach; }
+  /* Literal.Number */
+  .s { @apply text-cgreen; }
+  /* Literal.String */
+  .na { @apply text-cblue; }
+  /* Name.Attribute */
+  .nb { @apply text-cpeach; }
+  /* Name.Builtin */
+  .nc { @apply text-cmauve; }
+  /* Name.Class */
+  .no { @apply text-csky; }
+  /* Name.Constant */
+  .nd { @apply text-cblue; }
+  /* Name.Decorator */
+  .ni { @apply text-cpeach; }
+  /* Name.Entity */
+  .ne { @apply text-cgreen; }
+  /* Name.Exception */
+  .nf { @apply text-cblue; }
+  /* Name.Function */
+  .nl { @apply text-ctext; }
+  /* Name.Label */
+  .nn { @apply text-ctext; }
+  /* Name.Namespace */
+  .nx { @apply text-cgreen; }
+  /* Name.Other */
+  .py { @apply text-ctext; }
+  /* Name.Property */
+  .nt { @apply text-cred; }
+  /* Name.Tag */
+  .nv { @apply text-ctext; }
+  /* Name.Variable */
+  .ow { @apply text-cred; }
+  /* Operator.Word */
+  .w { @apply text-ctext; }
+  /* Text.Whitespace */
+  .mf { @apply text-cmauve; }
+  /* Literal.Number.Float */
+  .mh { @apply text-cmauve; }
+  /* Literal.Number.Hex */
+  .mi { @apply text-cmauve; }
+  /* Literal.Number.Integer */
+  .mo { @apply text-cmauve; }
+  /* Literal.Number.Oct */
+  .sb { @apply text-cyellow; }
+  /* Literal.String.Backtick */
+  .sc { @apply text-cyellow; }
+  /* Literal.String.Char */
+  .sd { @apply text-cyellow; }
+  /* Literal.String.Doc */
+  .s2 { @apply text-cgreen; }
+  /* Literal.String.Double */
+  .se { @apply text-cmauve; }
+  /* Literal.String.Escape */
+  .sh { @apply text-cyellow; }
+  /* Literal.String.Heredoc */
+  .si { @apply text-cyellow; }
+  /* Literal.String.Interpol */
+  .sx { @apply text-cyellow; }
+  /* Literal.String.Other */
+  .sr { @apply text-cyellow; }
+  /* Literal.String.Regex */
+  .s1 { @apply text-cyellow; }
+  /* Literal.String.Single */
+  .ss { @apply text-cyellow; }
+  /* Literal.String.Symbol */
+  .bp { @apply text-ctext; }
+  /* Name.Builtin.Pseudo */
+  .vc { @apply text-ctext; }
+  /* Name.Variable.Class */
+  .vg { @apply text-ctext; }
+  /* Name.Variable.Global */
+  .vi { @apply text-ctext; }
+  /* Name.Variable.Instance */
+  .il { @apply text-cmauve; }
+  /* Literal.Number.Integer.Long */
+  .gh {}
+  /* Generic Heading & Diff Header */
+  .gu { @apply text-csubtext0; }
+  /* Generic.Subheading & Diff Unified/Comment? */
+  .gd { @apply text-cred; }
+  /* Generic.Deleted & Diff Deleted */
+  .gi { @apply text-cgreen; }
+  /* Generic.Inserted & Diff Inserted */
+}

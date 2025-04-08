@@ -6,7 +6,7 @@
     {{- end -}}
   </div>
   <div class="footer-info">
-    &copy; {{ dateFormat "2006" now }} {{ with .Site.Copyright }} {{ . }} {{ end }}
+    &copy; {{ dateFormat "2006" now }} <a href="https://orangc.net" class="text-cpeach">{{ with .Site.Copyright }}{{ . }}</a>  {{ end }}
   </div>
 </footer>
 
