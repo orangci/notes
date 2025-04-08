@@ -6,7 +6,7 @@ pkgs.mkShell {
   ];
 
   shellHook = ''
-    tailwindcss -i css/owo.css -o themes/archie/assets/css/uwu.css
+    # tailwindcss -i css/owo.css -o themes/archie/assets/css/uwu.css --watch
     hugo new content/posts/00.md
     codium .
     codium content/posts/00.md

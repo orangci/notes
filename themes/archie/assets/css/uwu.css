@@ -699,6 +699,10 @@ ul {
   transition-duration: 300ms;
 }
 
+.nolink {
+  transition-property: none;
+}
+
 .link:hover::after {
   width: 100%;
 }
@@ -718,7 +722,7 @@ ul {
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-h1 {
+h1, h2, h3 {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
   padding: 0.25rem;
@@ -726,31 +730,7 @@ h1 {
   line-height: 2.25rem;
 }
 
-h2 {
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
-  padding: 0.25rem;
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-h3 {
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
-  padding: 0.25rem;
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-h4 {
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
-  padding: 0.25rem;
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-h5 {
+h4, h5 {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
   padding: 0.25rem;
@@ -1014,32 +994,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
 }
 
-h1::before {
-  --tw-text-opacity: 1;
-  color: rgb(250 179 135 / var(--tw-text-opacity, 1));
-}
-
-h2::before {
-  --tw-text-opacity: 1;
-  color: rgb(250 179 135 / var(--tw-text-opacity, 1));
-}
-
-h3::before {
-  --tw-text-opacity: 1;
-  color: rgb(250 179 135 / var(--tw-text-opacity, 1));
-}
-
-h4::before {
-  --tw-text-opacity: 1;
-  color: rgb(250 179 135 / var(--tw-text-opacity, 1));
-}
-
-h5::before {
-  --tw-text-opacity: 1;
-  color: rgb(250 179 135 / var(--tw-text-opacity, 1));
-}
-
-h6::before {
+h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
   --tw-text-opacity: 1;
   color: rgb(250 179 135 / var(--tw-text-opacity, 1));
 }
