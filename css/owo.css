@@ -22,16 +22,14 @@ ul { @apply list-disc list-inside text-left; }
   content: '';
   @apply absolute bottom-0 left-0 w-0 h-[2px] bg-cpeach transition-all duration-300;
 }
+.nolink { @apply transition-none;}
 .link:hover::after { @apply w-full; }
 .link2 { @apply inline-block relative underline decoration-cpeach decoration-2 hover:no-underline; }
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-h1 { @apply p-1 my-1 text-3xl; }
-h2 { @apply p-1 my-1 text-3xl; }
-h3 { @apply p-1 my-1 text-3xl; }
-h4 { @apply p-1 my-1 text-2xl; }
-h5 { @apply p-1 my-1 text-2xl; }
+h1, h2, h3 { @apply p-1 my-1 text-3xl; }
+h4, h5 { @apply p-1 my-1 text-2xl; }
 h6 { @apply p-1 my-1 text-xl; }
 
 
@@ -76,12 +74,7 @@ header { @apply flex flex-wrap justify-between mx-1 my-0 leading-10; }
 header .main { @apply text-2xl; }
 h1, h2, h3, h4, h5, h6 { @apply my-4; }
 
-h1::before { @apply text-cpeach;}
-h2::before { @apply text-cpeach;}
-h3::before { @apply text-cpeach;}
-h4::before { @apply text-cpeach;}
-h5::before { @apply text-cpeach;}
-h6::before { @apply text-cpeach;}
+h1::before, h2::before, h3::before, h4::before, h5::before, h6::before { @apply text-cpeach;}
 
 article h1::before { @apply text-cpeach; content: '# '; }
 article h2::before { @apply text-cpeach; content: '## '; }
