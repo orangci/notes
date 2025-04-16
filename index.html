@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 
 <html class="bg-base-100" data-theme="rosepine" lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <meta content="orangc's personal collection of notes." name="description" />
-  <meta content="orangc" property="og:title" />
-  <meta content="website" property="og:type" />
-  <meta content="https://orangc.net/" property="og:url" />
-  <meta content="https://orangc.net/leaf.png" property="og:image" />
-  <meta content="orangc's personal collection of notes." property="og:description" />
-  <meta content="#fab387" name="theme-color" />
-  <title>orangc's notes</title>
-  <link href="leaf.ico" rel="shortcut icon" type="image/x-icon" />
-  <link href="styles/output.css" rel="stylesheet" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="orangc's personal collection of notes." name="description"/>
+<meta content="orangc" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="https://orangc.net/" property="og:url"/>
+<meta content="https://orangc.net/leaf.png" property="og:image"/>
+<meta content="orangc's personal collection of notes." property="og:description"/>
+<meta content="#fab387" name="theme-color"/>
+<title>orangc's notes</title>
+<link href="leaf.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="styles/output.css" rel="stylesheet"/>
 </head>
-
 <body class="justify-center mx-auto max-w-6xl min-h-screen flex flex-col">
-  <div class="flex-grow">
-    <!-- Navbar -->
-    <nav class="max-w-7xl py-2 flex flex-wrap justify-center sm:justify-between items-center gap-2">
-      <p><span class="icon-[tabler--notebook] me-1 size-5 -mb-1"></span>notes.orangc.net</p>
-      <select class="hidden" data-select='{
+<div class="flex-grow">
+<!-- Navbar -->
+<nav class="max-w-7xl py-2 flex flex-wrap justify-center sm:justify-between items-center gap-2">
+<p><span class="icon-[tabler--notebook] me-1 size-5 -mb-1"></span>notes.orangc.net</p>
+<select class="hidden" data-select='{
             "placeholder": "Select option...",
             "toggleTag": "&lt;button type=\"button\" aria-expanded=\"false\"&gt;&lt;/button&gt;",
             "toggleClasses": "advance-select-toggle select-disabled:pointer-events-none select-disabled:opacity-40",
@@ -31,11 +29,11 @@
             "optionTemplate": "&lt;div class=\"flex justify-between items-center w-full\"&gt;&lt;span data-title&gt;&lt;/span&gt;&lt;span class=\"icon-[tabler--check] shrink-0 size-4 text-primary hidden selected:block \"&gt;&lt;/span&gt;&lt;/div&gt;",
             "extraMarkup": "&lt;span class=\"icon-[tabler--caret-down-filled] shrink-0 size-4 text-base-content absolute top-1/2 end-3 -translate-y-1/2 \"&gt;&lt;/span&gt;"
             }' id="theme-select">
-        <option value="rosepine">Rose Pine</option>
-        <option value="catppuccin">Catppuccin</option>
-        <option value="light">Semilatte</option>
-      </select>
-      <script>
+<option value="rosepine">Rose Pine</option>
+<option value="catppuccin">Catppuccin</option>
+<option value="light">Semilatte</option>
+</select>
+<script>
         const themeSelect = document.getElementById("theme-select");
         const savedTheme = localStorage.getItem("theme");
         if (savedTheme) {
@@ -49,57 +47,51 @@
           localStorage.setItem("theme", theme);
         });
       </script>
-    </nav>
-    <!-- Main -->
-    <div class="mx-auto justify-center flex mt-10">
-      <p>Hello! Welcome to my personal collection of notes — or at least, the ones that are public. If you're looking
+</nav>
+<!-- Main -->
+<div class="mx-auto justify-center flex mt-10">
+<p>Hello! Welcome to my personal collection of notes — or at least, the ones that are public. If you're looking
         for my main webpage, click <a class="btn btn-soft m-0 py-0 px-1" href="https://orangc.net">here</a>.</p>
-    </div>
-    <!-- Notes -->
-    <div class="mx-auto flex mt-10">
-      <ul class="list-disc list-inside text-left" id="posts-list">
-        <li><a class="link2 me-2" href="./notes/anicord-community-special-fall-2024.html">Anicord Community Special Fall
-            2024</a> <time class="text-base-content/70 italic" datetime="2025-04-16">April 16, 2025</time></li>
-      </ul>
-    </div>
-    <!-- Footer -->
-  </div>
-  <footer class="footer justify-center mx-auto pb-5">
-    <p>
-      It's <a class="btn px-1 m-0 p-0 md:p-2 btn-soft" href="https://orangc.net/time"><time
-          id="myCurrentTime"></time></a> in my timezone
+</div>
+<!-- Notes -->
+<div class="mx-auto flex mt-10">
+<ul class="list-disc list-inside text-left" id="posts-list"><li><a class="link2 me-2" href="./notes/anicord-community-special-fall-2024.html">Anicord Community Special Fall 2024</a> <time class="text-base-content/70 italic" datetime="2025-04-16">April 16, 2025</time></li></ul>
+</div>
+<!-- Footer -->
+</div>
+<footer class="footer justify-center mx-auto pb-5">
+<p>
+      It's <a class="btn px-1 m-0 p-0 md:p-2 btn-soft" href="https://orangc.net/time"><time id="myCurrentTime"></time></a> in my timezone
       <span class="icon-[tabler--circle-filled] size-2 mx-1"></span>
-      <button class="btn px-1 m-0 p-0 md:p-2 btn-soft" id="openLegalModalBtn">Copyright</button>
-    </p>
-  </footer>
-  <!-- License & Copyright Modal -->
-  <div class="flex hidden fixed inset-0 justify-center items-center text-sm bg-base-100/80" id="legalModal">
-    <div class="relative p-6 w-full max-w-md rounded-lg shadow-xl bg-base-300">
-      <h2 class="mb-4 text-lg font-semibold">License &amp; Copyright</h2>
-      © <span class="inline-flex text-accent">orangc</span> 2024–2025, All Rights Reserved. <br />
-      <p class="block my-2">
-      <ul class="list-disc list-inside text-left my-2">
-        <li>This website's <em>contents</em> are licensed under the <a class="link2"
-            href="https://choosealicense.com/licenses/cc-by-sa-4.0/">CC-BY-SA-4.0</a> license.</li>
-        <li>This website's <em><a href="https://github.com/orangci/webpage">source code</a></em> is licensed under the
+<button class="btn px-1 m-0 p-0 md:p-2 btn-soft" id="openLegalModalBtn">Copyright</button>
+</p>
+</footer>
+<!-- License & Copyright Modal -->
+<div class="flex hidden fixed inset-0 justify-center items-center text-sm bg-base-100/80" id="legalModal">
+<div class="relative p-6 w-full max-w-md rounded-lg shadow-xl bg-base-300">
+<h2 class="mb-4 text-lg font-semibold">License &amp; Copyright</h2>
+      © <span class="inline-flex text-accent">orangc</span> 2024–2025, All Rights Reserved. <br/>
+<p class="block my-2">
+<ul class="list-disc list-inside text-left my-2">
+<li>This website's <em>contents</em> are licensed under the <a class="link2" href="https://choosealicense.com/licenses/cc-by-sa-4.0/">CC-BY-SA-4.0</a> license.</li>
+<li>This website's <em><a href="https://github.com/orangci/webpage">source code</a></em> is licensed under the
           <a class="link2" href="https://choosealicense.com/licenses/agpl-3.0/">GNU AGPLv3</a> license.
         </li>
-      </ul>
-      </p>
-    </div>
-    <script>
+</ul>
+</p>
+</div>
+<script>
       const legalModal = document.getElementById('legalModal');
       document.getElementById('openLegalModalBtn').addEventListener('click', () => { legalModal.classList.remove('hidden'); });
       window.addEventListener('click', (event) => { if (event.target === legalModal) { legalModal.classList.add('hidden'); } });
     </script>
-  </div>
-  <!-- Scripts -->
-  <script src="scripts/flyonui.js"></script>
-  <script src="scripts/current-time.js"></script>
-  <script src="scripts/greeting-message.js"></script>
-  <script src="scripts/oneko.js"></script>
-  <script src="scripts/australia.js"></script>
-  <div class="hidden transform rotate-180"></div>
+</div>
+<!-- Scripts -->
+<script src="scripts/flyonui.js"></script>
+<script src="scripts/current-time.js"></script>
+<script src="scripts/greeting-message.js"></script>
+<script src="scripts/oneko.js"></script>
+<script src="scripts/australia.js"></script>
+<div class="hidden transform rotate-180"></div>
 </body>
-
 </html>
