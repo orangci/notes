@@ -44,9 +44,6 @@
             const savedTheme = localStorage.getItem("theme");
             if (savedTheme) {
               document.documentElement.setAttribute("data-theme", savedTheme);
-              if (savedTheme === "light" || savedTheme === "rosepine") {
-                document.body.classList.add("font-serif");
-              }
               themeSelect.value = savedTheme;
             }
           
@@ -54,12 +51,6 @@
               const theme = e.target.value;
               document.documentElement.setAttribute("data-theme", theme);
               localStorage.setItem("theme", theme);
-          
-              if (theme === "light" || theme === "rosepine") {
-                document.body.classList.add("font-serif");
-              } else {
-                document.body.classList.remove("font-serif");
-              }
             });
           </script>
         </nav>
