@@ -2840,6 +2840,28 @@ legend {
   margin-block: calc(var(--spacing) * 4);
   display: block;
 }
+.post-content a {
+  position: relative;
+  display: inline-block;
+  text-decoration-line: underline;
+  text-decoration-color: var(--color-accent);
+  text-decoration-thickness: 2px;
+  &:hover {
+    @media (hover: hover) {
+      text-decoration-line: none;
+    }
+  }
+}
+.post-content ul {
+  list-style-position: inside;
+  list-style-type: disc;
+  text-align: left;
+}
+.post-content ol {
+  list-style-position: inside;
+  list-style-type: decimal;
+  text-align: left;
+}
 @layer base {
   :where(:root),:root:has(input.theme-controller[value=light]:checked),[data-theme=light] {
     color-scheme: light;
