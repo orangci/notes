@@ -11,7 +11,7 @@
     <meta property="og:image" content="https://orangc.net/leaf.png" />
     <meta property="og:description" content="{{ short_ desc }}" />
     <meta name="theme-color" content="#fab387" />
-    <title>orangc's notes — Anicord Community Special Fall 2024</title>
+    <title>orangc's notes — This Website</title>
 
     <link rel="shortcut icon" href="../leaf.ico" type="image/x-icon" />
     <link rel="stylesheet" href="../styles/output.css" />
@@ -57,16 +57,39 @@
 
     <!-- Content -->
      <div class="mx-auto my-10 post-content text-base">
-        <h1 id="post-title">Anicord Community Special Fall 2024</h1>
-        <aside class="text-base-content/70 italic mb-4" id="post-date"><time class="text-base-content/70 italic" datetime="2025-04-16">April 16, 2025</time></aside>
-        <p><em><strong>Warning: this article contains spoilers for all of <a href="https://myanimelist.net/manga/55215/Utsuro_no_Hako_to_Zero_no_Maria">The Empty Box and Zeroth Maria</a>.</strong></em></p>
-<p>Here is my review of the <a href="https://myanimelist.net/manga/55215/Utsuro_no_Hako_to_Zero_no_Maria">The Empty Box and Zeroth Maria</a> for the Anicord Community Special of Fall 2024.</p>
-<p>I've been reading books my whole life, but I've never read a light novel. I saw some friends of mine reading light novels though and I thought it was quite interesting so I put Zeroth Maria on my plan to read list a few months ago. Now that I've finally gotten to read it.. I really liked it! This series is the kind of series that <em>makes you think</em> quite a bit. I guess this can be classified as a thriller series. The plot is complex in a very likable way, like some other books I've read (I'd give an example here, but I really don't remember unfortunately. An <del>anime</del> donghua with a similar vibe might be Link Click.) Also, characters. I have to marvel at the character development. Starting from volume one, I had assumed Hoshino would just be another bland character that doesn't change at all but he really grows and changes throughout the series, especially in volume six. The same goes for Maria and her relationship with Hoshino.</p>
-<p>A note: <em>Damn</em>, Hoshino is persistent — 400,000 times is not a joke. I don't think a normal human being wouldn't be able to do that, or be willing to go past their breaking point like that.</p>
-<p>The concept of Boxes is fascinating and also a bit scary. Considering the Boxes actualize the owner's underlying beliefs regarding how the world works, the only approach to use one would be Daiya's approach. Screw Daiya, by the way. I did not like him at all. It feels like he'd make a good serial killer.</p>
-<p>My favourite part of the series was the Game of Indolence arc. It's just very interesting; the mind games/manipulation they used on each other to win — or just violence, that works too Koudai — reveals hidden sides of the characters that you might not have gotten to see otherwise. Yuri Yanagi is scary, by the way. Daiya was probably right to  say that he'd never trust women again after seeing what she did in the Game of Indolence.</p>
-<p>In the end, Maria marrying Hoshino put an enormous smile on my face. Especially considering that usually in anime or what not they have a habit of <em>hinting</em> at a nice romantic ending but then just leaving it at the hints. Eiji Mikage is a goat for this.</p>
-<p>For the high score I gave this by the way, I just tend to rate high when I enter a new medium. All my manga scores are probably higher than average because of this too. A 10/10 masterpiece!</p>
+        <h1 id="post-title">This Website</h1>
+        <aside class="text-base-content/70 italic mb-4" id="post-date"><time class="text-base-content/70 italic" datetime="2025-04-17">April 17, 2025</time></aside>
+        <p>To be clear, I'm covering both websites, this one (notes.orangc.net) and my main webpage (orangc.net).</p>
+<h2>orangc.net</h2>
+<p>Currently it's on version four (version three is at <a href="https://orangc.net/v3">https://orangc.net/v3</a>). This time around I rewrote it using <a href="https://flyonui.com">FlyonUI</a>, a TailwindCSS library, instead of directly using Tailwind. Version 3 wasn't bad looking at all on desktop, but it was cramped on mobile. I had also been wanting to add some new features, so in v4:</p>
+<ul>
+<li>I finally made my website themable with a fun little toggle menu.</li>
+<li>I separated major sections into tabs in a navbar.</li>
+<li>I made it actually look somewhat decent on mobile.</li>
+</ul>
+<p>You might notice a <code>package.json</code> in the source code. That's for getting Tailwind, FlyonUI, and the icon libraries (from iconify, mostly Tabler) to build during development. The site is still a static site in HTML.</p>
+<h2>notes.orangc.net</h2>
+<p>This is version two of this webpage. Version one was built with Hugo, and a messily edited Hugo theme, <a href="https://github.com/athul/archie">Archie</a>. Everything was very much a mess because of the way I screwed around with things, so I decided to do something simple this time.</p>
+<p>Instead of using a framework like Hugo, I'd write a small Python script. I thought this would be difficult, but it turned out to be an overwhelming success, primarily because I didn't have to write a markdown parser myself — I used the <a href="https://mistune.lepture.com/">mistune</a> library.</p>
+<p>The script is exactly 100 lines and runs..., well, take a look:</p>
+<pre><code>❯ time python3 main.py
+
+real	0m0.308s
+user	0m0.254s
+sys	    0m0.037s
+</code></pre>
+<p>Which is fairly impressive, in my opinion. I'll break it down:</p>
+<ul>
+<li>The script goes through all the entries in the posts list in the main page and deletes them.</li>
+<li>It iterates over every note (located within <code>/src</code>) and adds it to the posts list in the main page.</li>
+<li>It then copies <code>/template.html</code> for each post within <code>/src</code> and inserts the post content, title, date, and short description (used for metadata) into the correct places.</li>
+</ul>
+<h3>Conclusion</h3>
+<p>I rewrote both websites in the span of a day, which felt good.</p>
+<ul>
+<li>Both websites' <strong>source code</strong> are licensed under <a href="./LICENSE">GNU AGPLv3</a>.</li>
+<li>Both websites' <strong>contents</strong> are licensed under <a href="./LICENSE.content">CC BY-SA 4.0</a>.</li>
+</ul>
 
     </div>
 

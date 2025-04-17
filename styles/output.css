@@ -1627,6 +1627,9 @@
   .my-2 {
     margin-block: calc(var(--spacing) * 2);
   }
+  .my-10 {
+    margin-block: calc(var(--spacing) * 10);
+  }
   .input {
     &::file-selector-button {
       margin-inline-end: calc(0.25rem * 4);
