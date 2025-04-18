@@ -15,6 +15,6 @@ pkgs.mkShell {
     else
       source venv/bin/activate
     fi
-    python3 main.py
+    python3 dev.py
   '';
 }
