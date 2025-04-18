@@ -138,7 +138,7 @@ legend { @apply px-1; }
 
 /* Posts
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.post-content h1 { @apply text-4xl mt-10; }
+.post-content > h1 { @apply text-4xl my-4; }
 .post-content h2, .post-content h3 { @apply text-3xl my-4; }
 .post-content h4, .post-content h5, .post-content h6 { @apply text-2xl my-4; }
 .post-content p { @apply block my-4; }

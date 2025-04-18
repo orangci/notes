@@ -57,8 +57,10 @@
 
     <!-- Content -->
      <div class="mx-auto my-10 post-content text-base">
-        <h1 id="post-title">{{ title }}</h1>
-        <aside class="text-base-content/70 italic mb-4" id="post-date">{{ date }}</aside>
+        <div class="flex justify-between mt-10 mb-4 items-center">
+            <h1 id="post-title" class="text-3xl">{{ title }}</h1>
+            <aside class="text-base-content/70 italic" id="post-date">{{ date }}</aside>
+        </div>
         {{ post-content }}
     </div>
 
