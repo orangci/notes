@@ -40,5 +40,5 @@ Which is fairly impressive, in my opinion. I'll break it down:
 
 I rewrote both websites in the span of a day, which felt good.
 
-- Both websites' **source code** are licensed under [GNU AGPLv3](./LICENSE).
-- Both websites' **contents** are licensed under [CC BY-SA 4.0](./LICENSE.content).
+- Both websites' **source code** are licensed under [GNU AGPLv3](https://choosealicense.com/licenses/agpl-3.0/).
+- Both websites' **contents** are licensed under [CC BY-SA 4.0](https://choosealicense.com/licenses/cc-by-sa-4.0/).
