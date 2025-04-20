@@ -1,4 +1,5 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-FileCopyrightText: orangc
 import asyncio, os, re, shutil, aiofiles, toml, mistune, pygments, pathlib
 from bs4 import BeautifulSoup
 from datetime import datetime
