@@ -2991,6 +2991,207 @@ legend {
 .task-list-item {
   list-style-type: none;
 }
+.highlight {
+  background-color: var(--color-base-100);
+  color: var(--color-base-content);
+}
+.hll {
+  background-color: var(--color-base-300);
+}
+.c {
+  color: var(--color-neutral);
+}
+.err {
+  color: var(--color-error);
+}
+.k {
+  color: var(--color-primary);
+}
+.l {
+  color: var(--color-secondary);
+}
+.n {
+  color: var(--color-base-content);
+}
+.o {
+  color: var(--color-primary);
+}
+.p {
+  color: var(--color-base-content);
+}
+.cm {
+  color: var(--color-neutral);
+}
+.cp {
+  color: var(--color-neutral);
+}
+.c1 {
+  color: var(--color-neutral);
+}
+.cs {
+  color: var(--color-neutral);
+}
+.gd {
+  color: var(--color-error);
+}
+.ge {
+  font-style: italic;
+}
+.gr {
+  color: var(--color-error);
+}
+.gh {
+  --tw-font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-bold);
+}
+.gi {
+  color: var(--color-success);
+}
+.go {
+  color: var(--color-neutral);
+}
+.gp {
+  color: var(--color-info);
+}
+.gs {
+  --tw-font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-bold);
+}
+.gu {
+  color: var(--color-accent);
+}
+.gt {
+  color: var(--color-warning);
+}
+.kc {
+  color: var(--color-primary);
+}
+.kd {
+  color: var(--color-primary);
+}
+.kn {
+  color: var(--color-primary);
+}
+.kp {
+  color: var(--color-primary);
+}
+.kr {
+  color: var(--color-primary);
+}
+.kt {
+  color: var(--color-primary);
+}
+.ld {
+  color: var(--color-secondary);
+}
+.m {
+  color: var(--color-accent);
+}
+.s {
+  color: var(--color-success);
+}
+.na {
+  color: var(--color-info);
+}
+.nb {
+  color: var(--color-base-content);
+}
+.nc {
+  color: var(--color-info);
+}
+.no {
+  color: var(--color-accent);
+}
+.nd {
+  color: var(--color-warning);
+}
+.ni {
+  color: var(--color-neutral);
+}
+.ne {
+  color: var(--color-error);
+}
+.nf {
+  color: var(--color-secondary);
+}
+.nl {
+  color: var(--color-base-content);
+}
+.nn {
+  color: var(--color-neutral);
+}
+.nt {
+  color: var(--color-accent);
+}
+.nv {
+  color: var(--color-primary);
+}
+.ow {
+  color: var(--color-primary);
+}
+.w {
+  color: var(--color-base-content);
+}
+.mf {
+  color: var(--color-accent);
+}
+.mh {
+  color: var(--color-accent);
+}
+.mi {
+  color: var(--color-accent);
+}
+.mo {
+  color: var(--color-accent);
+}
+.sb {
+  color: var(--color-success);
+}
+.sc {
+  color: var(--color-success);
+}
+.sd {
+  color: var(--color-success);
+}
+.s2 {
+  color: var(--color-success);
+}
+.se {
+  color: var(--color-warning);
+}
+.sh {
+  color: var(--color-success);
+}
+.si {
+  color: var(--color-success);
+}
+.sx {
+  color: var(--color-success);
+}
+.sr {
+  color: var(--color-info);
+}
+.s1 {
+  color: var(--color-success);
+}
+.ss {
+  color: var(--color-success);
+}
+.bp {
+  color: var(--color-info);
+}
+.vc {
+  color: var(--color-primary);
+}
+.vg {
+  color: var(--color-primary);
+}
+.vi {
+  color: var(--color-primary);
+}
+.il {
+  color: var(--color-accent);
+}
 @layer base {
   :where(:root),:root:has(input.theme-controller[value=light]:checked),[data-theme=light] {
     color-scheme: light;

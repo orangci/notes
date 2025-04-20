@@ -152,3 +152,71 @@ legend { @apply px-1; }
 .post-content blockquote {@apply border-l-2 border-neutral pl-2; }
 .task-list-item-checkbox { @apply my-1 checkbox checkbox-primary mr-2; }
 .task-list-item { @apply list-none; }
+
+/* Syntax Highlighting */
+.highlight         { @apply bg-base-100 text-base-content; }
+.hll               { @apply bg-base-300; }
+.c                 { @apply text-neutral; }         /* Comment */
+.err               { @apply text-error; }           /* Error */
+.k                 { @apply text-primary; }         /* Keyword */
+.l                 { @apply text-secondary; }       /* Literal */
+.n                 { @apply text-base-content; }    /* Name */
+.o                 { @apply text-primary; }         /* Operator */
+.p                 { @apply text-base-content; }    /* Punctuation */
+.cm                { @apply text-neutral; }         /* Comment.Multiline */
+.cp                { @apply text-neutral; }
+.c1                { @apply text-neutral; }         /* Comment.Single */
+.cs                { @apply text-neutral; }
+.gd                { @apply text-error; }           /* Generic.Deleted */
+.ge                { @apply italic; }               /* Generic.Emph */
+.gr                { @apply text-error; }
+.gh                { @apply font-bold; }
+.gi                { @apply text-success; }         /* Generic.Inserted */
+.go                { @apply text-neutral; }
+.gp                { @apply text-info; }
+.gs                { @apply font-bold; }
+.gu                { @apply text-accent; }
+.gt                { @apply text-warning; }
+.kc                { @apply text-primary; }
+.kd                { @apply text-primary; }
+.kn                { @apply text-primary; }
+.kp                { @apply text-primary; }
+.kr                { @apply text-primary; }
+.kt                { @apply text-primary; }         /* Keyword.Type */
+.ld                { @apply text-secondary; }
+.m                 { @apply text-accent; }          /* Literal.Number */
+.s                 { @apply text-success; }         /* Literal.String */
+.na                { @apply text-info; }            /* Name.Attribute */
+.nb                { @apply text-base-content; }
+.nc                { @apply text-info; }
+.no                { @apply text-accent; }
+.nd                { @apply text-warning; }
+.ni                { @apply text-neutral; }
+.ne                { @apply text-error; }
+.nf                { @apply text-secondary; }       /* Name.Function */
+.nl                { @apply text-base-content; }
+.nn                { @apply text-neutral; }
+.nt                { @apply text-accent; }
+.nv                { @apply text-primary; }
+.ow                { @apply text-primary; }
+.w                 { @apply text-base-content; }
+.mf                { @apply text-accent; }
+.mh                { @apply text-accent; }
+.mi                { @apply text-accent; }
+.mo                { @apply text-accent; }
+.sb                { @apply text-success; }
+.sc                { @apply text-success; }
+.sd                { @apply text-success; }
+.s2                { @apply text-success; }
+.se                { @apply text-warning; }
+.sh                { @apply text-success; }
+.si                { @apply text-success; }
+.sx                { @apply text-success; }
+.sr                { @apply text-info; }
+.s1                { @apply text-success; }
+.ss                { @apply text-success; }
+.bp                { @apply text-info; }
+.vc                { @apply text-primary; }
+.vg                { @apply text-primary; }
+.vi                { @apply text-primary; }
+.il                { @apply text-accent; }
