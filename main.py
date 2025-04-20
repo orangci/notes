@@ -8,7 +8,7 @@ NOTES_DIR = Path("notes")
 TEMPLATE_FILE = Path("template.html")
 INDEX_FILE = Path("index.html")
 
-md_parser = mistune.create_markdown(plugins=['spoiler', 'footnotes', 'url', 'task_lists', 'def_list', 'abbr', 'mark', 'superscript', 'subscript', 'table', 'strikethrough'])
+md_parser = mistune.create_markdown(plugins=['spoiler', 'footnotes', 'url', 'task_lists', 'abbr', 'superscript', 'subscript', 'table', 'strikethrough'])
 
 
 def format_date(date_str):
