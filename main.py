@@ -11,7 +11,6 @@ NOTES_DIR = pathlib.Path("notes")
 TEMPLATE_FILE = pathlib.Path("template.html")
 INDEX_FILE = pathlib.Path("index.html")
 
-
 class HighlightRenderer(mistune.HTMLRenderer):
     def block_code(self, code, info=None):
         if info:
@@ -81,21 +80,20 @@ async def build_post_files(posts_info):
         post_html = post_html.replace("{{ short_desc }}", meta["short_desc"])
         post_html = post_html.replace("{{ date }}", time_element)
         post_html = post_html.replace("{{ post-content }}", html_content)
-        filename = SRC_DIR / f"{meta['title'].lower().replace(' ', '-')}.md"
-        output_filename = filename.name.replace(".md", ".html")
+        output_filename = posts_info[i][0]["src_filename"].replace(".md", ".html")
         output_path = NOTES_DIR / output_filename
         await write_html(output_path, post_html)
-
 
 async def main():
     posts_info = []
     for md_file in SRC_DIR.glob("*.md"):
         result = await read_post(md_file)
         if result:
-            posts_info.append(result)
+            meta, html_content = result
+            meta["src_filename"] = md_file.name
+            posts_info.append((meta, html_content))
     posts_info.sort(key=lambda x: datetime.strptime(x[0]["date"], "%d.%m.%Y"), reverse=True)
     await asyncio.gather(build_index(posts_info), build_post_files(posts_info))
-
 
 if __name__ == "__main__":
     asyncio.run(main())
