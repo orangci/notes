@@ -55,8 +55,8 @@ async def build_index(posts_info):
     for meta, _ in posts_info:
         formatted_date, datetime_attr = format_date(meta["date"])
         li = soup.new_tag("li")
-        filename = f"{meta['title'].lower().replace(' ', '-')}.html"
-        a = soup.new_tag("a", attrs={"class": "link2 me-2", "href": f"./notes/{filename}"})
+        filename = meta["src_filename"].replace(".md", ".html")
+        a = soup.new_tag("a", attrs={"class": "link2 me-2", "href": f"notes/{filename}"})
         a.string = meta["title"]
         time_tag = soup.new_tag("time", attrs={"class": "text-base-content/70 italic", "datetime": datetime_attr},)
         time_tag.string = formatted_date
