@@ -18,13 +18,15 @@ class HighlightRenderer(mistune.HTMLRenderer):
             formatter = html.HtmlFormatter()
             return pygments.highlight(code, lexer, formatter)
         return "<pre><code>" + mistune.escape(code) + "</code></pre>"
-
+    
+    def heading(self, text, level):
+        slug = re.sub(r'[^a-zA-Z0-9 ]', '', text).lower().replace(' ', '-')
+        return f'<h{level} id="{slug}">{text}</h{level}>'
 
 md_parser = mistune.create_markdown(
     renderer=HighlightRenderer(),
     plugins=["spoiler", "footnotes", "url", "task_lists", "abbr", "superscript", "subscript", "table", "strikethrough"]
 )
-
 
 def format_date(date_str):
     dt = datetime.strptime(date_str, "%d.%m.%Y")
@@ -40,7 +42,6 @@ async def read_post(file_path):
     meta = toml.loads(meta_match.group(1).strip())
     body = content[meta_match.end() :].strip()
     return meta, md_parser(body)
-
 
 async def write_html(file_path, content):
     async with aiofiles.open(file_path, "w", encoding="utf-8") as f:
@@ -60,8 +61,7 @@ async def build_index(posts_info):
         a.string = meta["title"]
         time_tag = soup.new_tag("time", attrs={"class": "text-base-content/70 italic", "datetime": datetime_attr},)
         time_tag.string = formatted_date
-        li.append(a)
-        li.append(" ")
+        li.append(a); li.append(" ")
         li.append(time_tag)
         posts_list.append(li)
     async with aiofiles.open(INDEX_FILE, "w", encoding="utf-8") as f:
