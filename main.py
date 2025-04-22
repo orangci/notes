@@ -21,7 +21,7 @@ class HighlightRenderer(mistune.HTMLRenderer):
     
     def heading(self, text, level):
         slug = re.sub(r'[^a-zA-Z0-9 ]', '', text).lower().replace(' ', '-')
-        return f'<h{level} id="{slug}">{text}</h{level}>'
+        return f'''<h{level} id="{slug}" onclick="navigator.clipboard.writeText(location.href.split('#')[0] + '#{slug}')"> {text} </h{level}>'''
 
 md_parser = mistune.create_markdown(
     renderer=HighlightRenderer(),

@@ -142,7 +142,7 @@ legend { @apply px-1; }
 .post-content h2, .post-content h3 { @apply text-3xl my-4 text-accent; }
 .post-content h4, .post-content h5, .post-content h6 { @apply text-2xl my-4 text-info; }
 .post-content p { @apply block my-4; }
-.post-content a:not(.footnote-ref) { @apply inline-block relative underline decoration-accent decoration-2 hover:no-underline; }
+.post-content a { @apply inline-block relative underline decoration-accent decoration-2 hover:no-underline;}
 
 .post-content ul { @apply list-disc; }
 .post-content ol { @apply list-decimal; }

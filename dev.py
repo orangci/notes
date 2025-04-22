@@ -5,7 +5,7 @@ from pathlib import Path
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
-WATCHED_FILES = {"index.html", "template.html"}
+WATCHED_FILES = {"index.html", "template.html", "main.py"}
 WATCHED_DIRS = {"src"}
 COOLDOWN_SECONDS = 0.5
 
