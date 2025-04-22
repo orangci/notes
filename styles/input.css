@@ -138,9 +138,9 @@ legend { @apply px-1; }
 
 /* Posts
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.post-content h1 { @apply text-4xl my-4; }
-.post-content h2, .post-content h3 { @apply text-3xl my-4; }
-.post-content h4, .post-content h5, .post-content h6 { @apply text-2xl my-4; }
+.post-content h1 { @apply text-4xl my-4 text-primary; }
+.post-content h2, .post-content h3 { @apply text-3xl my-4 text-accent; }
+.post-content h4, .post-content h5, .post-content h6 { @apply text-2xl my-4 text-info; }
 .post-content p { @apply block my-4; }
 .post-content a:not(.footnote-ref) { @apply inline-block relative underline decoration-accent decoration-2 hover:no-underline; }
 
@@ -149,7 +149,7 @@ legend { @apply px-1; }
 .post-content ul, .post-content ol { @apply list-inside text-left; }
 .post-content li { @apply pl-4; }
 
-.post-content blockquote {@apply border-l-2 border-neutral pl-2; }
+.post-content blockquote {@apply border-l-4 border-neutral pl-2; }
 .task-list-item-checkbox { @apply my-1 checkbox checkbox-primary mr-2; }
 .task-list-item { @apply list-none; }
 

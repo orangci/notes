@@ -1,0 +1,218 @@
+<!-- SPDX-License-Identifier: AGPL-3.0-or-later -->
+<!DOCTYPE html>
+<html lang="en" class="bg-base-100" data-theme="rosepine">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Some basic laws of internet etiquette that not enough people follow." />
+    <meta property="og:title" content="orangc" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://orangc.net/" />
+    <meta property="og:image" content="https://orangc.net/leaf.png" />
+    <meta property="og:description" content="Some basic laws of internet etiquette that not enough people follow." />
+    <meta name="theme-color" content="#fab387" />
+    <title>orangc's notes — Internet Etiquette</title>
+
+    <link rel="shortcut icon" href="../leaf.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/output.css" />
+</head>
+
+<body class="justify-center mx-auto max-w-6xl min-h-screen flex flex-col">
+    <div class="flex-grow">
+    <!-- Navbar -->
+    <nav class="max-w-7xl mx-auto px-4 py-2 flex flex-wrap justify-center sm:justify-between items-center gap-2">
+        <a class="link link-animated" href=".."><span class="icon-[tabler--notebook] me-1 size-5 -mb-1"></span>notes.orangc.net</a>
+
+        <select
+            data-select='{
+            "placeholder": "Select option...",
+            "toggleTag": "<button type=\"button\" aria-expanded=\"false\"></button>",
+            "toggleClasses": "advance-select-toggle select-disabled:pointer-events-none select-disabled:opacity-40",
+            "dropdownClasses": "advance-select-menu bg-base-200 shadow-base-200/50 shadow-lg",
+            "optionClasses": "advance-select-option selected:select-active",
+            "optionTemplate": "<div class=\"flex justify-between items-center w-full\"><span data-title></span><span class=\"icon-[tabler--check] shrink-0 size-4 text-primary hidden selected:block \"></span></div>",
+            "extraMarkup": "<span class=\"icon-[tabler--caret-down-filled] shrink-0 size-4 text-base-content absolute top-1/2 end-3 -translate-y-1/2 \"></span>"
+            }'
+            class="hidden"
+            id="theme-select">
+            <option value="rosepine">Rose Pine</option>
+            <option value="catppuccin">Catppuccin</option>
+            <option value="light">Semilatte</option>
+        </select>
+        <script>
+            const themeSelect = document.getElementById("theme-select");
+            const savedTheme = localStorage.getItem("theme");
+            if (savedTheme) {
+              document.documentElement.setAttribute("data-theme", savedTheme);
+              themeSelect.value = savedTheme;
+            }
+          
+            themeSelect.addEventListener("change", e => {
+              const theme = e.target.value;
+              document.documentElement.setAttribute("data-theme", theme);
+              localStorage.setItem("theme", theme);
+            });
+          </script>
+        </nav>
+
+    <!-- Content -->
+     <div class="mx-auto my-10 post-content text-base">
+        <div class="flex justify-between mt-10 mb-4 items-center">
+            <h1 id="post-title" class="text-3xl">Internet Etiquette</h1>
+            <aside class="text-base-content/70 italic" id="post-date"><time class="text-base-content/70 italic" datetime="2025-04-22">April 22, 2025</time></aside>
+        </div>
+        <p>This post was inspired by the <a href="https://nohello.club">No Hello Club</a>, <a href="https://dontasktoask.com">dontasktoask.com</a>, and <a href="https://xyproblem.info">The XY Problem</a>. Here I'll list some of the &quot;laws&quot; of internet etiquette that I try to follow. While you are under no obligation to follow them yourself, you would be doing yourself and everyone else a favour by doing so. Let's begin.</p>
+<h2 id="how-to-ask-a-question">How To Ask a Question</h2><hr />
+<h4 id="dont-ask-to-ask">Don't Ask To Ask</h4><p>Knowing how to ask a good question is important and useful for both the questioner and the responder.
+Something that happens often in online forums and discussion channels is someone <em>asking to ask.</em> An example of this would be asking &quot;Are there any Python experts around?&quot; or &quot;Can anyone help me?&quot; which is:</p>
+<ul>
+<li>Annoying</li>
+<li>Often ignored</li>
+<li>Lazy</li>
+</ul>
+<p>This questioner is too lazy to put their question into words unless they know someone is around who <em>might</em> have the skills to answer their question. As a result, even if there are experts in the issue around, they will be far more likely to ignore the questioner, which helps nobody.</p>
+<p>What can you do instead? Phrase your question clearly, with as much detail as possible, at the very start.</p>
+<blockquote>
+<p>Hi! I have a question regarding making x work. I have tried y and z, but x still doesn't compile. Here are some logs. I would appreciate any pointers to help me understand what I did wrong here.</p>
+</blockquote>
+<p>You are more likely to get a response this way, and it makes it easier for the responder to answer your question. If you don't, it simply means that nobody was around that knew the answer. That's fine! Life isn't perfect.</p>
+<h4 id="google-it--rtfm">Google It / RTFM</h4><p>Another thing that happens often is asking a <em>very basic question</em> that could've been solved with a quick query on your preferred search engine or take a quick glance at some documentation. Don't ask &quot;are there any Rust crates for handling the Discord API?&quot;, research it yourself. It is not the duty of other 'net denizens to research basic information on your behalf.</p>
+<p>If you're told to RTFM (a common abbreviation for &quot;Read The Fucking Manual&quot;), don't take it personally or be discouraged. You weren't told this to be humiliated— you were told this in an effort to improve yourself so that the next time around you look ath the documentation first.</p>
+<h4 id="the-xy-problem">The XY Problem</h4><p>A common mistake is asking about an attempted <em>solution</em> to your problem instead of <em>asking about the problem itself</em>. This causes headache and hassle for everyone involved.</p>
+<p>This is because your attempted solution might not work at all, or simply be a bad way to do things. The responder might go through some difficulty trying to help you with your question on why your solution doesn't work— when she knew the answer to your original question all along.</p>
+<h4 id="providing-details">Providing Details</h4><p>Nobody will be able to help you if you don't provide details! Don't just say &quot;Help, my compiler isn't compiling&quot; and then leave. Provide logs, share your code, describe your problem's symptoms in chronological order, tell us what solutions you've tried — be independant and try solutions yourself before giving up! — and explain thoroughly. I shouldn't need to explain how much of a hassle you'll be able to bypass by doing this.</p>
+<h4 id="post-in-the-right-place">Post In The Right Place</h4><p>When looking to post a question, find the appropriate place to do so. Don't post in the wrong forum or channel and expect an answer; expect to be ignored at best or told to get lost at worst. Usually, projects have a dedicated support forum. If it isn't clear where it is, then feel free to ask where you can find it— but don't take that as a license to post your question in a general discussion channel!</p>
+<h4 id="do-your-own-homework">Do Your Own Homework</h4><p>Asking for help with homework is fine, but remember we're not here to do your homework for you. Ask for <em>tips on how to solve a problem</em>, not <em>the answer to a problem</em>. You won't learn otherwise— and what's the point of an education in that case?</p>
+<h4 id="on-courtesy">On Courtesy</h4><p>Being polite hurts nobody. A few milliseconds of your time spent typing &quot;thank you&quot; is not that difficult.</p>
+<p>When posting a question:</p>
+<ul>
+<li>Don't mark it as &quot;urgent/critical&quot; — it might be for you, but it isn't for us.</li>
+<li>Be polite, say &quot;please&quot; and &quot;thank you&quot;!</li>
+<li>Proofread! Don't let bad formatting and spelling and/or grammar errors get in the way of clear communication.</li>
+<li>When your issue is solved, <em>mark it as solved</em>!</li>
+</ul>
+<h4 id="summary">Summary</h4><p>Here's a little checklist for you to go through mentally before posting a question:</p>
+<ul>
+<li>Am I posting this in the right place?</li>
+<li>Am I asking about my actual problem, or a solution to my problem that isn't working?</li>
+<li>Did I provide details?</li>
+<li>Is my question clearly formatted without grammar errors or typos?</li>
+<li>Have I conducted research on my problem and tried to solve it myself?</li>
+<li>Am I asking politely?</li>
+</ul>
+<h2 id="no-quothelloquot">No &quot;Hello&quot;</h2><hr />
+<p>It's not a crime to say &quot;hello&quot;. This problem is specifically addressing <strong>task-based conversations</strong> such as a request for information. Let's have an example:</p>
+<blockquote>
+<p><strong>Perucia</strong> <em>(03.44 Monday)</em>: Hi!</p>
+</blockquote>
+<blockquote>
+<p><strong>Hazuki</strong> <em>(07.42 Monday)</em>: Hey there! What's up?</p>
+</blockquote>
+<blockquote>
+<p><strong>Perucia</strong> <em>(16.11 Monday)</em>: I was wondering if you knew the answer to x problem.</p>
+</blockquote>
+<blockquote>
+<p><strong>Hazuki</strong> <em>(10.30 Tuesday)</em>: Oh, I do! The answer is y.</p>
+</blockquote>
+<blockquote>
+<p><strong>Perucia</strong> <em>(14.55 Tuesday)</em>: I see, thank you so much!</p>
+</blockquote>
+<blockquote>
+<p><strong>Hazuki</strong> <em>(10.35 Wednesday)</em>: No problem.</p>
+</blockquote>
+<p><strong>This is a respectful conversation, sure; but notice how long it took for Perucia to get her answer, and how much of Hazuki's time got wasted.</strong></p>
+<p><strong>Instead, let's try something simpler. Let's say hi, <em>but also include why we're reaching out to the person!</em></strong></p>
+<blockquote>
+<p><strong>Scott</strong> <em>(11.11 Tuesday)</em>: Good morning Inudzuka! I was wondering if you knew a good solution to x.</p>
+</blockquote>
+<blockquote>
+<p><strong>Inudzuka</strong> <em>(13.46 Tuesday)</em>: Good day Scott. Good question. The answer is y.</p>
+</blockquote>
+<blockquote>
+<p><strong>Scott</strong> <em>(16.32 Tuesday)</em>: That fixed it! Thank you so much.</p>
+</blockquote>
+<blockquote>
+<p><strong>Inudzuka</strong> <em>(10.54 Wednesday)</em>: No problem.</p>
+</blockquote>
+<p>This was shorter and a more productive conversation for both Scott and Inudzuka. Personally, if somebody I don't know very well opens a conversation with just a &quot;hello&quot;, I'll usually ignore them or direct them to a page like this one. This is not being rude! This is teaching each other how to have a more productive conversation. As such, please don't be afraid to redirect someone to a page similar to this one yourself. 💖</p>
+<h2 id="kindness-on-the-internet">Kindness On The Internet</h2><hr />
+<p>The 'net is a wild place full of trolls, baiters, and lowlifes. However, there are also numerous kind and helpful people here. It is your choice: which group do you want to choose? Do you want to be a help or a nuisance? I personally strive to be helpful and kind instead of being rude and aggressive. Here are some of my strategies in order to do so:</p>
+<h4 id="being-polite">Being Polite</h4><p>As I <a href="#on-courtesy">mentioned earlier</a>, spending a few extra seconds of your time typing &quot;please&quot; or &quot;thank you&quot; hurts nobody. Additionally, always remember that communication over the internet is not the same as communication in real life. There are no indicators of tone or mood — we can't see your face — so the way you type plays a major factor in how we perceive you. What might seem like an offhanded joke to you could be viewed as a real, rude remark to others. People often say &quot;think before you speak&quot; — and that applies here too. Think before you type.</p>
+<h4 id="dont-get-provoked">Don't Get Provoked</h4><p>Trolls are always looking to start an argument by posting bait or needless hate. Don't engage. Before getting into a heated discussion, ask yourself: is this really worth my time?
+Ten times out of ten, the answer is no. If someone is baiting, you have a variety of options:</p>
+<ul>
+<li>Report the user, to moderators or the platform's reporting system.</li>
+<li>Block the user.</li>
+<li>Ignore the user.</li>
+<li>If all else fails: get off of your device! Go drink some water, read a book, breathe some fresh air, maybe eat lunch. Life is too short to waste on attention freaks.</li>
+</ul>
+<p>By ignoring bait, you contribute to the community by preventing yet another heated or toxic conversation. It isn't your responsibility to stop hate content or bait from being posted, but it is your responsibility to not make the situation worse by giving the baiters what they want so desparately­— attention.</p>
+<p>As a side note, if it <em>is</em> your responsibility — perhaps you are a moderator — then don't engage! It is good moderator ethic to simply take action instead of enflaming the problem.</p>
+<h4 id="quotcancelquot-culture-is-nonsense">&quot;Cancel&quot; Culture Is Nonsense</h4><p>Oh, woe! Some random celebrity I don't care about just got cancelled; here's their address, social security number, mother's maiden name, and a thousand different posts about what an evil person they are (it seems they said a slur once at the age of 14).</p>
+<p>If you've read this far, I assume that you're the kind of person that won't waste their time doing something as unproductive and useless as digging up age-old information on a random person in an effort to publicly humiliate them. I believe in you.</p>
+<p>Cancelling people is a waste of time. It isn't productive or helpful to anyone.</p>
+<p>But what if person x has done something legitimately wrong and illegal, like grooming a minor?</p>
+<p>Block them. Advise others not to interact with them— peacefully, not by ragebaiting, but by calmly saying &quot;Hey, I see you're watching this person's content— did you know that her did x? I recommend that you don't support her, here's a link to a source...&quot;</p>
+<p>This is a better way of handling things.</p>
+
+    </div>
+
+    <script src="https://giscus.app/client.js"
+        data-repo="orangci/notes"
+        data-repo-id="R_kgDONMXqug"
+        data-category="giscus"
+        data-category-id="DIC_kwDONMXqus4CpSCY"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="transparent_dark"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
+
+    <!-- Footer -->
+     </div><footer class="footer mt-10 justify-center mx-auto pb-5">
+        <p>
+            It's <a href="https://orangc.net/time" class="btn px-1 m-0 p-0 md:p-2 btn-soft"><time id="myCurrentTime"></time></a> in my timezone
+            <span class="icon-[tabler--circle-filled] size-2 mx-1"></span>
+            <button id="openLegalModalBtn" class="btn px-1 m-0 p-0 md:p-2 btn-soft">Copyright</button>
+        </p> 
+     </footer>
+
+     <!-- License & Copyright Modal -->
+     <div id="legalModal" class="flex hidden fixed inset-0 justify-center items-center text-sm bg-base-100/80">
+        <div class="relative p-6 w-full max-w-md rounded-lg shadow-xl bg-base-300">
+            <h2 class="mb-4 text-lg font-semibold">License & Copyright</h2>
+            &copy; <span class="inline-flex text-accent">orangc</span> 2024–2025, All Rights Reserved. <br>
+            <p class="block my-2">
+                <ul class="list-disc list-inside text-left my-2">
+                    <li>This website's <em>contents</em> are licensed under the <a href="https://choosealicense.com/licenses/cc-by-sa-4.0/" class="link2">CC-BY-SA-4.0</a> license.</li>
+                    <li>This website's <em><a href="https://github.com/orangci/notes" class="link2">source code</a></em> is licensed under the <a href="https://choosealicense.com/licenses/agpl-3.0/" class="link2">GNU AGPLv3</a> license.</li>
+                </ul>
+            </p>
+        </div>
+        <script>
+            const legalModal = document.getElementById('legalModal');
+            document.getElementById('openLegalModalBtn').addEventListener('click', () => { legalModal.classList.remove('hidden'); });
+            window.addEventListener('click', (event) => { if (event.target === legalModal) { legalModal.classList.add('hidden'); } });
+        </script>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../scripts/flyonui.js"></script>
+    <script src="../scripts/current-time.js"></script>
+    <script src="../scripts/oneko.js"></script>
+    <script src="../scripts/australia.js"></script>
+    <div class="hidden transform rotate-180 text-base-300 bg-base-300 rounded-3xl shadow-sm shadow-base-300'"></div>
+    <script>
+        const spoilerClasses = [ 'text-base-300', 'bg-base-300', 'rounded-3xl', 'shadow-sm', 'shadow-base-300' ];
+        document.querySelectorAll('.spoiler').forEach(el => { el.classList.add(...spoilerClasses);
+        el.addEventListener('click', () => { el.classList.remove(...spoilerClasses); }); });
+    </script>
+</body>
+
+</html>
