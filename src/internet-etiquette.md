@@ -120,6 +120,6 @@ Cancelling people is a waste of time. It isn't productive or helpful to anyone.
 
 But what if person x has done something legitimately wrong and illegal, like grooming a minor?
 
-Block them. Advise others not to interact with them— peacefully, not by ragebaiting, but by calmly saying "Hey, I see you're watching this person's content— did you know that her did x? I recommend that you don't support her, here's a link to a source..."
+Block them. Advise others not to interact with them— peacefully, not by ragebaiting, but by calmly saying "Hey, I see you're watching this person's content— did you know that she did x? I recommend that you don't support her, here's a link to a source..."
 
 This is a better way of handling things.
