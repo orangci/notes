@@ -1,17 +1,15 @@
 {pkgs ? import <nixpkgs> {}}:
 pkgs.mkShell {
   buildInputs = with pkgs; [
-    nodejs
     python313
-    python313Packages.virtualenv
+    uv
   ];
 
   shellHook = ''
     if [ ! -d "venv" ]; then
-      python -m venv venv
+      uv venv venv
       source venv/bin/activate
-      pip install --upgrade pip
-      pip install -r requirements.txt
+      uv pip install -r requirements.txt
     else
       source venv/bin/activate
     fi
