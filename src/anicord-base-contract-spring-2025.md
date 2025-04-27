@@ -12,6 +12,6 @@ Moving on, something I noticed before I started watching YLIA was the Love Polyg
 
 I had worried that because the internet spoiled me on YLIA's ending (I have a feeling this happens to everyone though) I wouldn't be able to enjoy it properly. But the hints that Kaori would die started dropping quite early in the anime so I realized that the internet spoiling me wouldn't be a big deal if it was already kinda obvious that it would happen. To me the most emotional part of the anime wasn't Kaori's death, but the scene where Saki is on her deathbed, crying because she couldn't give enough to her son— that combined with Arima remembering that his mother never hated him — really made me feel things.
 
-The animation and sound (I was called a criminal multiple times because yes, I did mute the music scenes because I'm religious but let's forget abot that for now), were great. The mouths designs were funky but I didn't dislike them. It's definitely a unique art style. 
+The animation and sound (I was called a criminal multiple times because yes, I did mute the music scenes because I'm religious but let's forget about that for now), were great. The mouths' designs were funky but I didn't dislike them. It's definitely a unique art style.
 
 I enjoyed it. 8/10.
