@@ -134,7 +134,7 @@ def build_post_files(posts_info):
         time_element += "</span>"
 
         post_html = template.replace("{{ title }}", meta["title"])
-        post_html = post_html.replace("{{ short_desc }}", meta["short_desc"])
+        post_html = post_html.replace("{{ desc }}", meta["desc"])
         post_html = post_html.replace("{{ date }}", time_element)
         post_html = post_html.replace("{{ post-content }}", html_content)
 

@@ -1,7 +1,7 @@
 +++
 title="This Website"
 date="17.04.2025"
-short_desc="How I built my websites."
+desc="How I built my websites."
 +++
 
 To be clear, I'm covering both websites, this one (notes.orangc.net) and my main webpage (orangc.net).

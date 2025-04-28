@@ -1,7 +1,7 @@
 +++
 title = 'Anicord Base Contract Winter 2025'
 date = '26.04.2025'
-short_desc = 'Anicord Base Contract Winter 2025'
+desc = 'Anicord Base Contract Winter 2025'
 hidden=true
 +++
 

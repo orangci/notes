@@ -1,7 +1,7 @@
 +++
 title = 'Anicord Community Special Fall 2024'
 date = '26.11.2024'
-short_desc = 'Anicord Community Special Fall 2024'
+desc = 'Anicord Community Special Fall 2024'
 hidden=true
 +++
 

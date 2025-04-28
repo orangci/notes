@@ -1,7 +1,7 @@
 +++
 title="Internet Etiquette"
 date="22.04.2025"
-short_desc="Some basic laws of internet etiquette that not enough people follow."
+desc="Some basic laws of internet etiquette that not enough people follow."
 +++
 
 This post was inspired by the [No Hello Club](https://nohello.club), [dontasktoask.com](https://dontasktoask.com), and [The XY Problem](https://xyproblem.info). Here I'll list some of the "laws" of internet etiquette that I try to follow. While you are under no obligation to follow them yourself, you would be doing yourself and everyone else a favour by doing so. Let's begin.
