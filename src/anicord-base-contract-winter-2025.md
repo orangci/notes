@@ -2,6 +2,7 @@
 title = 'Anicord Base Contract Winter 2025'
 date = '26.04.2025'
 short_desc = 'Anicord Base Contract Winter 2025'
+hidden=true
 +++
 
 ***This post contains spoilers for the entirety of Your Lie In April. You have been warned.*** This is for the Base Contract in the Anicord event server.
