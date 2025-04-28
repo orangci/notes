@@ -30,7 +30,7 @@ Fun, right? Now let me list the downsides!
 2. ***Steep*** learning curve.[^2]
 3. NixOS is very different from other Linux distributions. The problems you face will be niche, poorly documented, and you'll struggle. Things that work on Ubuntu won't work on Nix.
 4. Massive time sink. 
-5. For those who care, [really stupid governance](https://lunduke.locals.com/post/5819317/nixos-commits-a-purge-of-nazi-contributors-forces-abdication-of-founder).
+5. For those who care, [really stupid governance](https://lunduke.locals.com/post/5819317/nixos-commits-a-purge-of-nazi-contributors-forces-abdication-of-founder). [Vaxry](https://vaxry.net) wrote a great [blog post](https://blog.vaxry.net/articles/2023-inclusiveActivists) covering situations similar to this one.
 6. Refer to [Hlissner's thoughts on NixOS](https://github.com/hlissner/dotfiles?tab=readme-ov-file#frequently-asked-questions).
 
 It's up to you to decide whether you can live with these downsides, or whether the upsides outweight the downsides. But now you can't say you weren't warned! My beloved NixOS sucks, but everything else sucks even more.
