@@ -28,6 +28,7 @@
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --radius-lg: 0.5rem;
+    --radius-2xl: 1rem;
     --radius-3xl: 1.5rem;
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --default-transition-duration: 150ms;
@@ -1741,6 +1742,24 @@ legend {
 .post-content li {
   padding-left: calc(var(--spacing) * 4);
 }
+.footnotes {
+  margin-top: calc(var(--spacing) * 10);
+  border-top-style: var(--tw-border-style);
+  border-top-width: 1px;
+  border-color: var(--color-info);
+  padding-top: calc(var(--spacing) * 2);
+  font-size: var(--text-sm);
+  line-height: var(--tw-leading, var(--text-sm--line-height));
+}
+.footnotes li {
+  margin-left: calc(var(--spacing) * -4);
+}
+.footnotes li p {
+  display: inline;
+}
+.footnotes li a:last-child {
+  margin-left: calc(var(--spacing) * 1);
+}
 .post-content blockquote {
   border-left-style: var(--tw-border-style);
   border-left-width: 4px;
@@ -1866,6 +1885,9 @@ legend {
     color: color-mix(in oklab, var(--color-base-content) 70%, transparent);
   }
   font-style: italic;
+}
+.post-content img {
+  border-radius: var(--radius-2xl);
 }
 .highlight {
   background-color: var(--color-base-100);

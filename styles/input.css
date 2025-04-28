@@ -149,11 +149,18 @@ legend { @apply px-1; }
 .post-content ul, .post-content ol { @apply list-inside text-left; }
 .post-content li { @apply pl-4; }
 
+.footnotes { @apply mt-10 border-t-1 border-info pt-2 text-sm; }
+.footnotes li { @apply -ml-4; }
+.footnotes li p { @apply inline; }
+.footnotes li a:last-child { @apply ml-1; }
+
 .post-content blockquote {@apply border-l-4 border-neutral pl-2; }
 .task-list-item-checkbox { @apply my-1 checkbox checkbox-primary mr-2; }
 .task-list-item { @apply list-none; }
 
 .post_time { @apply text-base-content/70 italic; }
+
+.post-content img { @apply rounded-2xl; }
 
 /* Syntax Highlighting */
 .highlight         { @apply bg-base-100 text-base-content; }
