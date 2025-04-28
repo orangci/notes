@@ -83,15 +83,34 @@ def build_index(posts_info):
             "a", attrs={"class": "link2 me-2", "href": f"notes/{filename}"}
         )
         a.string = meta["title"]
-        time_tag = soup.new_tag(
-            "time",
-            attrs={"class": "text-base-content/70 italic", "datetime": datetime_attr},
-        )
-        time_tag.string = formatted_date
         li.append(a)
         li.append(" ")
-        li.append(time_tag)
+
+        span = soup.new_tag("span", attrs={"class": "post_time"})
+
+        time_tag = soup.new_tag(
+            "time",
+            attrs={"datetime": datetime_attr},
+        )
+        time_tag.string = formatted_date
+        span.append(time_tag)
+
+        if meta.get("edited"):
+            formatted_date_edited, datetime_attr_edited = format_date(meta["edited"])
+            span.append(" (edited ")
+            edited_time_tag = soup.new_tag(
+                "time",
+                attrs={
+                    "datetime": datetime_attr_edited,
+                },
+            )
+            edited_time_tag.string = formatted_date_edited
+            span.append(edited_time_tag)
+            span.append(")")
+
+        li.append(span)
         posts_list.append(li)
+
     with open(INDEX_FILE, "w", encoding="utf-8") as f:
         f.write(str(soup))
 
@@ -104,11 +123,21 @@ def build_post_files(posts_info):
         template = f.read()
     for i, (meta, html_content) in enumerate(posts_info):
         formatted_date, datetime_attr = format_date(meta["date"])
-        time_element = f'<time class="text-base-content/70 italic" datetime="{datetime_attr}">{formatted_date}</time>'
+
+        time_element = '<span class="post_time">'
+        time_element += f'<time datetime="{datetime_attr}">{formatted_date}</time>'
+
+        if meta.get("edited"):
+            formatted_date_edited, datetime_attr_edited = format_date(meta["edited"])
+            time_element += f' (edited <time datetime="{datetime_attr_edited}">{formatted_date_edited}</time>)'
+
+        time_element += "</span>"
+
         post_html = template.replace("{{ title }}", meta["title"])
         post_html = post_html.replace("{{ short_desc }}", meta["short_desc"])
         post_html = post_html.replace("{{ date }}", time_element)
         post_html = post_html.replace("{{ post-content }}", html_content)
+
         output_filename = posts_info[i][0]["src_filename"].replace(".md", ".html")
         output_path = NOTES_DIR / output_filename
         write_html(output_path, post_html)
