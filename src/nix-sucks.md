@@ -6,7 +6,7 @@ date = "28.04.2025"
 
 I have been using NixOS since — according to the date of the earliest commit in my [dotfiles](https://orangc.net/dots) repository — September 8th, 2023. I started by using a barebones [configuration.nix](https://github.com/orangci/dots/blob/OldNixKDE/etc/nixos/configuration.nix) and a [decent enough rice](../assets/old-nix-kde-rice.png). I eventually switched to using flakes by forking [ZaneyOS](https://gitlab.com/Zaney/zaneyos), then, a few months later, scrapping it and writing my own [flake](https://orangc.net/dots).
 
-A reproducible and declarative Linux distribution (NixOS), package manager (the package repository is called Nixpkgs), and language (Nix). This means that with Nix/NixOS/Nixpkgs:
+Nix is a: reproducible and declarative Linux distribution (NixOS), package manager (the package repository is called Nixpkgs), and language (Nix). This means that with Nix/NixOS/Nixpkgs:
 
 - Replicate your configuration on one machine to any other machine.
 - In Nix, programs, settings, "dotfiles", and much more are all configured *declaratively* in a `.nix` file, as opposed to setting things up *imperatively* via commands in the CLI, leading to a much more consistent and easier to understand system configuration.
