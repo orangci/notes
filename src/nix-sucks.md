@@ -17,7 +17,7 @@ Nix is a: reproducible and declarative Linux distribution (NixOS), package manag
 
 Fun, right? Now let me list the downsides!
 
-1. The documentation tends to sucks. —On that note, here are some resources for beginners:
+1. The documentation tends to suck. —On that note, here are some resources for beginners:
     - Official: [NixOS Wiki](https://wiki.nixos.org/wiki/NixOS_Wiki) / [NixOS Manual](https://nixos.org/manual/nixos/unstable/) / [Nixpkgs Manual](https://nixos.org/manual/nixpkgs/unstable/) / [Nix Manual](https://nix.dev/manual/nix/2.28/)
     - [Ian Henry's NixOS Guide](https://ianthehenry.com/posts/how-to-learn-nix/introduction/)
     - [NixOS & Flakes Book](https://nixos-and-flakes.thiscute.world/)
