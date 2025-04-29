@@ -160,16 +160,14 @@
         el.addEventListener('click', () => { el.classList.remove(...spoilerClasses); }); });
     </script>
     <!-- goatcounter analytics -->
-    <script data-goatcounter="https://orangc.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
     <script>
-        (function () {
-        const encodedPath = encodeURIComponent(location.pathname);
-        fetch(`https://orangc.goatcounter.com/api/v0/count/${encodedPath}.json`)
-            .then(r => r.ok ? r.json() : Promise.reject("Failed to load"))
-            .then(data => { document.getElementById("view-count").textContent = data.count.toLocaleString() + " views"; })
-            .catch(err => { console.error("View count error:", err); document.getElementById("view-count").textContent = "N/A"; });
-        })();
+        let r = new XMLHttpRequest();
+        r.addEventListener('load', function() { document.querySelector('#view-count').innerText = JSON.parse(this.responseText).count })
+        let path = location.pathname
+        r.open('GET', 'https://goatcounter.orangc.net/counter/' + encodeURIComponent(path) + '.json')
+        r.send()
     </script>
+    <script data-goatcounter="https://goatcounter.orangc.net/count" async src="//gc.zgo.at/count.js"></script>
 
 </body>
 
