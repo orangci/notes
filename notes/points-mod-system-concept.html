@@ -1,0 +1,123 @@
+<!-- SPDX-License-Identifier: AGPL-3.0-or-later -->
+<!DOCTYPE html>
+<html lang="en" class="bg-base-100" data-theme="rosepine">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A moderation system concept based on points." />
+    <meta property="og:title" content="orangc's notes — Concept: Points Moderation System" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://orangc.net/" />
+    <meta property="og:image" content="https://orangc.net/leaf.png" />
+    <meta property="og:description" content="A moderation system concept based on points." />
+    <meta name="theme-color" content="#fab387" />
+    <title>orangc's notes — Concept: Points Moderation System</title>
+
+    <link rel="shortcut icon" href="../leaf.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/output.css" />
+</head>
+
+<body class="justify-center mx-auto max-w-6xl min-h-screen flex flex-col">
+    <div class="flex-grow">
+    <!-- Navbar -->
+    <nav class="max-w-7xl mx-auto px-4 py-2 flex flex-wrap justify-center sm:justify-between items-center gap-2">
+        <a class="link link-animated" href=".."><span class="icon-[tabler--notebook] me-1 size-5 -mb-1"></span>notes.orangc.net</a>
+
+        <select
+            data-select='{
+            "placeholder": "Select option...",
+            "toggleTag": "<button type=\"button\" aria-expanded=\"false\"></button>",
+            "toggleClasses": "advance-select-toggle select-disabled:pointer-events-none select-disabled:opacity-40",
+            "dropdownClasses": "advance-select-menu bg-base-200 shadow-base-200/50 shadow-lg",
+            "optionClasses": "advance-select-option selected:select-active",
+            "optionTemplate": "<div class=\"flex justify-between items-center w-full\"><span data-title></span><span class=\"icon-[tabler--check] shrink-0 size-4 text-primary hidden selected:block \"></span></div>",
+            "extraMarkup": "<span class=\"icon-[tabler--caret-down-filled] shrink-0 size-4 text-base-content absolute top-1/2 end-3 -translate-y-1/2 \"></span>"
+            }'
+            class="hidden"
+            id="theme-select">
+            <option value="rosepine">Rose Pine</option>
+            <option value="catppuccin">Catppuccin</option>
+            <option value="light">Semilatte</option>
+        </select>
+        <script>
+            const themeSelect = document.getElementById("theme-select");
+            const savedTheme = localStorage.getItem("theme");
+            if (savedTheme) {
+              document.documentElement.setAttribute("data-theme", savedTheme);
+              themeSelect.value = savedTheme;
+            }
+          
+            themeSelect.addEventListener("change", e => {
+              const theme = e.target.value;
+              document.documentElement.setAttribute("data-theme", theme);
+              localStorage.setItem("theme", theme);
+            });
+          </script>
+        </nav>
+
+    <!-- Content -->
+     <div class="mx-auto my-10 post-content text-base">
+        <div class="flex justify-between mt-10 mb-4 items-center">
+            <h1 id="post-title" class="text-3xl">Concept: Points Moderation System</h1>
+            <aside class="text-base-content/70 italic" id="post-date"><span class="post_time"><time datetime="2025-04-29">April 29, 2025</time></span></aside>
+        </div>
+        
+    </div>
+
+    <script src="https://giscus.app/client.js"
+        data-repo="orangci/notes"
+        data-repo-id="R_kgDONMXqug"
+        data-category="giscus"
+        data-category-id="DIC_kwDONMXqus4CpSCY"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="transparent_dark"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
+
+    <!-- Footer -->
+     </div><footer class="footer mt-10 justify-center mx-auto pb-5">
+        <p>
+            It's <a href="https://orangc.net/time" class="btn px-1 m-0 p-0 md:p-2 btn-soft"><time id="myCurrentTime"></time></a> in my timezone
+            <span class="icon-[tabler--circle-filled] size-2 mx-1"></span>
+            <button id="openLegalModalBtn" class="btn px-1 m-0 p-0 md:p-2 btn-soft">Copyright</button>
+        </p> 
+     </footer>
+
+     <!-- License & Copyright Modal -->
+     <div id="legalModal" class="flex hidden fixed inset-0 justify-center items-center text-sm bg-base-100/80">
+        <div class="relative p-6 w-full max-w-md rounded-lg shadow-xl bg-base-300">
+            <h2 class="mb-4 text-lg font-semibold">License & Copyright</h2>
+            &copy; <span class="inline-flex text-accent">orangc</span> 2024–2025, All Rights Reserved. <br>
+            <p class="block my-2">
+                <ul class="list-disc list-inside text-left my-2">
+                    <li>This website's <em>contents</em> are licensed under the <a href="https://choosealicense.com/licenses/cc-by-sa-4.0/" class="link2">CC-BY-SA-4.0</a> license.</li>
+                    <li>This website's <em><a href="https://github.com/orangci/notes" class="link2">source code</a></em> is licensed under the <a href="https://choosealicense.com/licenses/agpl-3.0/" class="link2">GNU AGPLv3</a> license.</li>
+                </ul>
+            </p>
+        </div>
+        <script>
+            const legalModal = document.getElementById('legalModal');
+            document.getElementById('openLegalModalBtn').addEventListener('click', () => { legalModal.classList.remove('hidden'); });
+            window.addEventListener('click', (event) => { if (event.target === legalModal) { legalModal.classList.add('hidden'); } });
+        </script>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../scripts/flyonui.js"></script>
+    <script src="../scripts/current-time.js"></script>
+    <script src="../scripts/oneko.js"></script>
+    <script>
+        const spoilerClasses = [ 'text-base-300', 'bg-base-300', 'rounded-3xl', 'shadow-sm', 'shadow-base-300' ];
+        document.querySelectorAll('.spoiler').forEach(el => { el.classList.add(...spoilerClasses);
+        el.addEventListener('click', () => { el.classList.remove(...spoilerClasses); }); });
+    </script>
+</body>
+
+</html>
