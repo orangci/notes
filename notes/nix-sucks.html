@@ -58,9 +58,14 @@
 
     <!-- Content -->
      <div class="mx-auto my-10 post-content text-base">
-        <div class="flex justify-between mt-10 mb-4 items-center">
-            <h1 id="post-title" class="text-3xl">Nix(OS) Sucks</h1>
-            <aside class="text-base-content/70 italic" id="post-date"><span class="post_time"><time datetime="2025-04-28">April 28, 2025</time></span></aside>
+        <h1 id="post-title" class="text-3xl">Nix(OS) Sucks</h1>
+        <div class="flex gap-2 mb-8 items-center text-base-content/70">
+            <aside class="flex items-center">
+                <span class="icon-[tabler--eye] size-5 me-1"></span>
+                <span id="view-count"></span>
+            </aside>
+            <span class="icon-[tabler--circle-filled] size-2"></span>
+            <aside id="post-date"><span class="post_time"><time datetime="2025-04-28">April 28, 2025</time></span></aside>
         </div>
         <p>I have been using NixOS since — according to the date of the earliest commit in my <a href="https://orangc.net/dots">dotfiles</a> repository — September 8th, 2023. I started by using a barebones <a href="https://github.com/orangci/dots/blob/OldNixKDE/etc/nixos/configuration.nix">configuration.nix</a> and a <a href="../assets/old-nix-kde-rice.png">decent enough rice</a>. I eventually switched to using flakes by forking <a href="https://gitlab.com/Zaney/zaneyos">ZaneyOS</a>, then, a few months later, scrapping it and writing my own <a href="https://orangc.net/dots">flake</a>.</p>
 <p>Nix is a: reproducible and declarative Linux distribution (NixOS), package manager (the package repository is called Nixpkgs), and language (Nix). This means that with Nix/NixOS/Nixpkgs:</p>
@@ -154,6 +159,18 @@
         document.querySelectorAll('.spoiler').forEach(el => { el.classList.add(...spoilerClasses);
         el.addEventListener('click', () => { el.classList.remove(...spoilerClasses); }); });
     </script>
+    <!-- goatcounter analytics -->
+    <script data-goatcounter="https://orangc.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <script>
+        (function () {
+        const encodedPath = encodeURIComponent(location.pathname);
+        fetch(`https://orangc.goatcounter.com/api/v0/count/${encodedPath}.json`)
+            .then(r => r.ok ? r.json() : Promise.reject("Failed to load"))
+            .then(data => { document.getElementById("view-count").textContent = data.count.toLocaleString() + " views"; })
+            .catch(err => { console.error("View count error:", err); document.getElementById("view-count").textContent = "N/A"; });
+        })();
+    </script>
+
 </body>
 
 </html>

@@ -58,9 +58,14 @@
 
     <!-- Content -->
      <div class="mx-auto my-10 post-content text-base">
-        <div class="flex justify-between mt-10 mb-4 items-center">
-            <h1 id="post-title" class="text-3xl">Anicord Base Contract Winter 2025</h1>
-            <aside class="text-base-content/70 italic" id="post-date"><span class="post_time"><time datetime="2025-04-26">April 26, 2025</time></span></aside>
+        <h1 id="post-title" class="text-3xl">Anicord Base Contract Winter 2025</h1>
+        <div class="flex gap-2 mb-8 items-center text-base-content/70">
+            <aside class="flex items-center">
+                <span class="icon-[tabler--eye] size-5 me-1"></span>
+                <span id="view-count"></span>
+            </aside>
+            <span class="icon-[tabler--circle-filled] size-2"></span>
+            <aside id="post-date"><span class="post_time"><time datetime="2025-04-26">April 26, 2025</time></span></aside>
         </div>
         <p><em><strong>This post contains spoilers for the entirety of Your Lie In April. You have been warned.</strong></em> This is for the Base Contract in the Anicord event server.</p>
 <p>According to my friends and reviews on MAL, YLIA is one of the saddest anime out there, and is supposed to make you cry. In that particular regard, it did not hold up to the expectations. I'm not too surprised there, there are very few pieces of media that have managed to get me a little teary. That's not to say that I didn't enjoy YLIA— it was really good. It has a good grasp on emotional struggles and portrays them very well.</p>
@@ -124,6 +129,18 @@
         document.querySelectorAll('.spoiler').forEach(el => { el.classList.add(...spoilerClasses);
         el.addEventListener('click', () => { el.classList.remove(...spoilerClasses); }); });
     </script>
+    <!-- goatcounter analytics -->
+    <script data-goatcounter="https://orangc.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <script>
+        (function () {
+        const encodedPath = encodeURIComponent(location.pathname);
+        fetch(`https://orangc.goatcounter.com/api/v0/count/${encodedPath}.json`)
+            .then(r => r.ok ? r.json() : Promise.reject("Failed to load"))
+            .then(data => { document.getElementById("view-count").textContent = data.count.toLocaleString() + " views"; })
+            .catch(err => { console.error("View count error:", err); document.getElementById("view-count").textContent = "N/A"; });
+        })();
+    </script>
+
 </body>
 
 </html>
