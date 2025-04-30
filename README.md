@@ -1,5 +1,5 @@
 # orangc's notes
-My notes collection, built with my own Python script and styled with [TailwindCSS](https://tailwindcss.com) & [FlyonUI](https://flyonui.com).
+My notes collection and static site generator (written in Python, see [`main.py`](/main.py)) and styled with [TailwindCSS](https://tailwindcss.com) & [FlyonUI](https://flyonui.com).
 
 ## Licensing
 - This website's **source code** is licensed under [GNU AGPLv3](./LICENSE).

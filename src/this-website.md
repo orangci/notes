@@ -2,6 +2,7 @@
 title="This Website"
 desc="How I built my websites."
 date="17.04.2025"
+edited="30.04.2025"
 +++
 
 To be clear, I'm covering both websites, this one (notes.orangc.net) and my main webpage (orangc.net).
@@ -18,9 +19,9 @@ You might notice a `package.json` in the source code. That's for getting Tailwin
 ## notes.orangc.net
 This is version two of this webpage. Version one was built with Hugo, and a messily edited Hugo theme, [Archie](https://github.com/athul/archie). Everything was very much a mess because of the way I screwed around with things, so I decided to do something simple this time.
 
-Instead of using a framework like Hugo, I'd write a small Python script. I thought this would be difficult, but it turned out to be an overwhelming success, primarily because I didn't have to write a markdown parser myself — I used the [mistune](https://mistune.lepture.com/) library.
+Instead of using a framework like Hugo, I'd write **my own static site generator** using Python. I thought this would be difficult, but it turned out to be an overwhelming success, primarily because I didn't have to write a markdown parser myself — I used the [mistune](https://mistune.lepture.com/) library.
 
-The script is exactly 100 lines and runs..., well, take a look:
+The script is exactly 100 lines [later edit: it is now larger, albeit still under 200 lines] and runs..., well, take a look:
 
 ```
 ❯ time python3 main.py
@@ -36,9 +37,20 @@ Which is fairly impressive, in my opinion. I'll break it down:
 - It iterates over every note (located within `/src`) and adds it to the posts list in the main page.
 - It then copies `/template.html` for each post within `/src` and inserts the post content, title, date, and short description (used for metadata) into the correct places.
 
-### Conclusion
+**Features**:
+- Fully featured markdown with footnotes, tables, spoilers, and more.
+- Syntax highlighting for code blocks.
+- Live reloading via `dev.py`.
+- Viewcount on each post powered by [goatcounter](https://goatcounter.com).
+- The following metadata fields:
+    - `title`: The post title.
+    - `desc`: A short description of the post. Used for SEO/embeds.
+    - `date`: When the post was originally published.
+    - `edited` (optional): The date the post was last edited.
+    - `hidden` (optional): Whether or not to hide the post from the homepage post listing.
 
-I rewrote both websites in the span of a day, which felt good.
+### Conclusion
+I rewrote both websites in the span of a day, which felt good. Later edit: many more features were added to notes.orangc.net over the span of the next week or two.
 
 - Both websites' **source code** are licensed under [GNU AGPLv3](https://choosealicense.com/licenses/agpl-3.0/).
 - Both websites' **contents** are licensed under [CC BY-SA 4.0](https://choosealicense.com/licenses/cc-by-sa-4.0/).

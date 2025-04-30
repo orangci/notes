@@ -65,7 +65,7 @@
                 <span id="view-count"></span>
             </aside>
             <span class="icon-[tabler--circle-filled] size-2"></span>
-            <aside id="post-date"><span class="post_time"><time datetime="2025-04-17">April 17, 2025</time></span></aside>
+            <aside id="post-date"><span class="post_time"><time datetime="2025-04-17">April 17, 2025</time> (edited <time datetime="2025-04-30">April 30, 2025</time>)</span></aside>
         </div>
         <p>To be clear, I'm covering both websites, this one (notes.orangc.net) and my main webpage (orangc.net).</p>
 <h2 id="orangcnet" onclick="navigator.clipboard.writeText(location.href.split('#')[0] + '#orangcnet')"> orangc.net </h2><p>Currently it's on version four (version three is at <a href="https://orangc.net/v3">https://orangc.net/v3</a>). This time around I rewrote it using <a href="https://flyonui.com">FlyonUI</a>, a TailwindCSS library, instead of directly using Tailwind. Version 3 wasn't bad looking at all on desktop, but it was cramped on mobile. I had also been wanting to add some new features, so in v4:</p>
@@ -76,8 +76,8 @@
 </ul>
 <p>You might notice a <code>package.json</code> in the source code. That's for getting Tailwind, FlyonUI, and the icon libraries (from iconify, mostly Tabler) to build during development. The site is still a static site in HTML.</p>
 <h2 id="notesorangcnet" onclick="navigator.clipboard.writeText(location.href.split('#')[0] + '#notesorangcnet')"> notes.orangc.net </h2><p>This is version two of this webpage. Version one was built with Hugo, and a messily edited Hugo theme, <a href="https://github.com/athul/archie">Archie</a>. Everything was very much a mess because of the way I screwed around with things, so I decided to do something simple this time.</p>
-<p>Instead of using a framework like Hugo, I'd write a small Python script. I thought this would be difficult, but it turned out to be an overwhelming success, primarily because I didn't have to write a markdown parser myself — I used the <a href="https://mistune.lepture.com/">mistune</a> library.</p>
-<p>The script is exactly 100 lines and runs..., well, take a look:</p>
+<p>Instead of using a framework like Hugo, I'd write <strong>my own static site generator</strong> using Python. I thought this would be difficult, but it turned out to be an overwhelming success, primarily because I didn't have to write a markdown parser myself — I used the <a href="https://mistune.lepture.com/">mistune</a> library.</p>
+<p>The script is exactly 100 lines [later edit: it is now larger, albeit still under 200 lines] and runs..., well, take a look:</p>
 <pre><code>❯ time python3 main.py
 
 real	0m0.308s
@@ -89,7 +89,22 @@ sys	    0m0.037s
 <li>It iterates over every note (located within <code>/src</code>) and adds it to the posts list in the main page.</li>
 <li>It then copies <code>/template.html</code> for each post within <code>/src</code> and inserts the post content, title, date, and short description (used for metadata) into the correct places.</li>
 </ul>
-<h3 id="conclusion" onclick="navigator.clipboard.writeText(location.href.split('#')[0] + '#conclusion')"> Conclusion </h3><p>I rewrote both websites in the span of a day, which felt good.</p>
+<p><strong>Features</strong>:</p>
+<ul>
+<li>Fully featured markdown with footnotes, tables, spoilers, and more.</li>
+<li>Syntax highlighting for code blocks.</li>
+<li>Live reloading via <code>dev.py</code>.</li>
+<li>Viewcount on each post powered by <a href="https://goatcounter.com">goatcounter</a>.</li>
+<li>The following metadata fields:<ul>
+<li><code>title</code>: The post title.</li>
+<li><code>desc</code>: A short description of the post. Used for SEO/embeds.</li>
+<li><code>date</code>: When the post was originally published.</li>
+<li><code>edited</code> (optional): The date the post was last edited.</li>
+<li><code>hidden</code> (optional): Whether or not to hide the post from the homepage post listing.</li>
+</ul>
+</li>
+</ul>
+<h3 id="conclusion" onclick="navigator.clipboard.writeText(location.href.split('#')[0] + '#conclusion')"> Conclusion </h3><p>I rewrote both websites in the span of a day, which felt good. Later edit: many more features were added to notes.orangc.net over the span of the next week or two.</p>
 <ul>
 <li>Both websites' <strong>source code</strong> are licensed under <a href="https://choosealicense.com/licenses/agpl-3.0/">GNU AGPLv3</a>.</li>
 <li>Both websites' <strong>contents</strong> are licensed under <a href="https://choosealicense.com/licenses/cc-by-sa-4.0/">CC BY-SA 4.0</a>.</li>
