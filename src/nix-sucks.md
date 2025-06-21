@@ -2,6 +2,7 @@
 title = "Nix(OS) Sucks"
 desc = "Some thoughts on Nix/NixOS, and why it sucks— but is better than everything else."
 date = "28.04.2025"
+edited = "21.06.2025"
 +++
 
 I have been using NixOS since — according to the date of the earliest commit in my [dotfiles](https://orangc.net/dots) repository — September 8th, 2023. I started by using a barebones [configuration.nix](https://github.com/orangci/dots/blob/OldNixKDE/etc/nixos/configuration.nix) and a [decent enough rice](../assets/old-nix-kde-rice.png). I eventually switched to using flakes by forking [ZaneyOS](https://gitlab.com/Zaney/zaneyos), then, a few months later, scrapping it and writing my own [flake](https://orangc.net/dots).
@@ -12,6 +13,11 @@ Nix is a: reproducible and declarative Linux distribution (NixOS), package manag
 - In Nix, programs, settings, "dotfiles", and much more are all configured *declaratively* in a `.nix` file, as opposed to setting things up *imperatively* via commands in the CLI, leading to a much more consistent and easier to understand system configuration.
 - Access to the largest package repository on Earth — nixpkgs.[^1]
 - Portable; run Nix on any Linux distribution or even MacOS.
+- Immutability.
+- Easy to package programs if they aren't in nixpkgs.
+- Easily try out new packages without installing them (e.g. `nix run nixpkgs#firefox`).
+- Nix uses binary caches so you rarely have to compile anything; it's also easy to set up your own binary cache up.
+- Nix solves dependency hell. You can mix and match different versions of packages without any conflicts.
 - Rollbacks are builtin and enabled by default. Did you break.. everything? Don't sweat it; restart your computer and boot into an older version of your configuration.
 - And much more.
 
@@ -32,7 +38,7 @@ Fun, right? Now let me list the downsides!
 4. Massive time sink. 
 5. Refer to [Hlissner's thoughts on NixOS](https://github.com/hlissner/dotfiles?tab=readme-ov-file#frequently-asked-questions).
 
-It's up to you to decide whether you can live with these downsides, or whether the upsides outweight the downsides. But now you can't say you weren't warned! My beloved NixOS sucks, but everything else sucks even more.
+Long live Nix(OS).
 
 [^1]: Source: [Repology](https://repology.org/repositories/statistics/total).
 [^2]: [This](../assets/nix-learning-curve-of-doom.png) graph does an accurate job of portraying the Nix learning curve.

@@ -66,7 +66,7 @@
                 <span id="view-count"></span>
             </aside>
             <span class="icon-[tabler--circle-filled] size-2"></span>
-            <aside id="post-date"><span class="post_time"><time datetime="2025-04-28">April 28, 2025</time></span></aside>
+            <aside id="post-date"><span class="post_time"><time datetime="2025-04-28">April 28, 2025</time> (edited <time datetime="2025-06-21">June 21, 2025</time>)</span></aside>
         </div>
         <p>I have been using NixOS since — according to the date of the earliest commit in my <a href="https://orangc.net/dots">dotfiles</a> repository — September 8th, 2023. I started by using a barebones <a href="https://github.com/orangci/dots/blob/OldNixKDE/etc/nixos/configuration.nix">configuration.nix</a> and a <a href="../assets/old-nix-kde-rice.png">decent enough rice</a>. I eventually switched to using flakes by forking <a href="https://gitlab.com/Zaney/zaneyos">ZaneyOS</a>, then, a few months later, scrapping it and writing my own <a href="https://orangc.net/dots">flake</a>.</p>
 <p>Nix is a: reproducible and declarative Linux distribution (NixOS), package manager (the package repository is called Nixpkgs), and language (Nix). This means that with Nix/NixOS/Nixpkgs:</p>
@@ -75,6 +75,11 @@
 <li>In Nix, programs, settings, &quot;dotfiles&quot;, and much more are all configured <em>declaratively</em> in a <code>.nix</code> file, as opposed to setting things up <em>imperatively</em> via commands in the CLI, leading to a much more consistent and easier to understand system configuration.</li>
 <li>Access to the largest package repository on Earth — nixpkgs.<sup class="footnote-ref" id="fnref-1"><a href="#fn-1">1</a></sup></li>
 <li>Portable; run Nix on any Linux distribution or even MacOS.</li>
+<li>Immutability.</li>
+<li>Easy to package programs if they aren't in nixpkgs.</li>
+<li>Easily try out new packages without installing them (e.g. <code>nix run nixpkgs#firefox</code>).</li>
+<li>Nix uses binary caches so you rarely have to compile anything; it's also easy to set up your own binary cache up.</li>
+<li>Nix solves dependency hell. You can mix and match different versions of packages without any conflicts.</li>
 <li>Rollbacks are builtin and enabled by default. Did you break.. everything? Don't sweat it; restart your computer and boot into an older version of your configuration.</li>
 <li>And much more.</li>
 </ul>
@@ -97,7 +102,7 @@
 <li>Massive time sink.</li>
 <li>Refer to <a href="https://github.com/hlissner/dotfiles?tab=readme-ov-file#frequently-asked-questions">Hlissner's thoughts on NixOS</a>.</li>
 </ol>
-<p>It's up to you to decide whether you can live with these downsides, or whether the upsides outweight the downsides. But now you can't say you weren't warned! My beloved NixOS sucks, but everything else sucks even more.</p>
+<p>Long live Nix(OS).</p>
 <section class="footnotes">
 <ol>
 <li id="fn-1"><p>Source: <a href="https://repology.org/repositories/statistics/total">Repology</a>.<a href="#fnref-1" class="footnote">&#8617;</a></p></li>
