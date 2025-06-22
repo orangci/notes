@@ -1,9 +1,10 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 # SPDX-FileCopyrightText: orangc
-import asyncio, time
-from pathlib import Path
-from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
+from watchdog.observers import Observer
+from pathlib import Path
+import asyncio
+import time
 
 WATCHED_FILES = {"index.html", "template.html", "main.py"}
 WATCHED_DIRS = {"src"}

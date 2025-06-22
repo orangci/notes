@@ -1,14 +1,14 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 # SPDX-FileCopyrightText: orangc
-import re
-import toml
-import mistune
-import pygments
-import pathlib
-from bs4 import BeautifulSoup
-from datetime import datetime
 from pygments.lexers import get_lexer_by_name
 from pygments.formatters import html
+from bs4 import BeautifulSoup
+from datetime import datetime
+import pygments
+import pathlib
+import mistune
+import toml
+import re
 
 SRC_DIR = pathlib.Path("src")
 NOTES_DIR = pathlib.Path("notes")
@@ -59,7 +59,9 @@ def read_post(file_path):
         return None
     meta = toml.loads(meta_match.group(1).strip())
     body = content[meta_match.end() :].strip()
-    return meta, md_parser(body)
+    html_content = md_parser(body)
+    # html_content = html_content.replace() # this is possible, if you ever want to replace stuff in le future
+    return meta, html_content
 
 
 def write_html(file_path, content):
