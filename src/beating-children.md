@@ -2,7 +2,10 @@
 title = 'You Should Beat Your Children!'
 desc = 'Why you should start beating your children today (and how to do so).'
 date = '24.06.2025'
+hidden = true
 +++
+
+Note, this is a joke, see the [This Is A Joke](#this-is-a-joke) section.
 
 I am a person of principle. I have strong moral values that I uphold whenever possible; I like to consider justice to be one of them.
 
@@ -51,5 +54,7 @@ Here are some other tried and tested methods that have been used across the ages
 
 [^4]: If you or someone you know is considering suicide, please don't be complacent. Call (or urge the person in question) to call a [hotline](https://sossilenceofsuicide.org/). Remember that you're important; God loves you.
 
-## Conclusion
-This article was a joke. If you or a child you know is undergoing domestic abuse, please call the authorities! Domestic abuse is wrong and, behind the jokes, I genuinely don't condone it.
+## This Is A Joke
+This article is a joke. If you or a child you know is undergoing domestic abuse, please call the authorities! Domestic abuse is wrong and, behind the jokes, I genuinely don't condone it. Countless childrens' lives are practically ruined by domestic abuse. It's not only wrong, it's downright evil. No child deserves to go through it. And yes, hitting children is domestic abuse, so don't try to claim otherwise.
+
+Additionally, as a Muslim to any other Muslims who have stumbled on this; hitting children is *haram*. Absolutely forbidden. Please don't.
