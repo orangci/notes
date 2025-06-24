@@ -1,7 +1,7 @@
 +++
 title = 'You Should Beat Your Children!'
 desc = 'Why you should start beating your children today (and how to do so).'
-date = '26.11.2024'
+date = '24.06.2025'
 +++
 
 I am a person of principle. I have strong moral values that I uphold whenever possible; I like to consider justice to be one of them.
