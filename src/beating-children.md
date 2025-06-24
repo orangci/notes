@@ -40,7 +40,7 @@ Wrapping up, a fun tip I recommend to aspiring kid-beaters is to *beat the child
 ## Emotional Damage
 Up until now, I've been talking about physical beatings. However, this isn't the only way to hurt a child. Emotional damage is also a great and easy method of inflicting pain.
 
-There are many methods of inflicting emotional damage on a child. My personal favourite is comparing them to another child that does better than them (especially in academic aspects).Again, I always recommend that aspiring kid-beaters experiment with the methods and techniques that work best with them.
+There are many methods of inflicting emotional damage on a child. My personal favourite is comparing them to another child that does better than them (especially in academic aspects). Again, I always recommend that aspiring kid-beaters experiment with the methods and techniques that work best with them.
 
 Here are some other tried and tested methods that have been used across the ages:
 
