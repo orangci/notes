@@ -30,7 +30,7 @@ Perhaps you still (somehow) find my argument unconvincing. If that's the case, I
 Now, let us move on to the *how* of beating children.
 
 ## How to Beat Your Children
-The first thing you must take into consideration is *equiqment*. Equiqment is extremely important. There's no doubting, of course, that punching a child in the face is an extremely enjoyable activity; however, with the right equiqment, one can acheive a new level of satisfaction.
+The first thing you must take into consideration is *equipment*. Equipment is extremely important. There's no doubting, of course, that punching a child in the face is an extremely enjoyable activity; however, with the right equipment, one can acheive a new level of satisfaction.
 
 That is why it is important to have a wide variety of *weapons* at your disposal. My own preferred weapon of choice is the sandal; it is easily accessible, and, as a projectile weapon with excellent aerodynamic qualities, you don't even have to get up from your $5 lawn chair to inflict damage.
 
