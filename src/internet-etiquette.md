@@ -1,8 +1,8 @@
 +++
-title="Internet Etiquette"
-desc="Some basic laws of internet etiquette that not enough people follow."
-date="22.04.2025"
-edited="25.05.2025"
+title = "Internet Etiquette"
+desc = "Some basic laws of internet etiquette that not enough people follow."
+date = "2025-04-22"
+edited = "2025-05-25"
 +++
 
 This post was inspired by the [No Hello Club](https://nohello.club)[^1], [dontasktoask.com](https://dontasktoask.com),  [The XY Problem](https://xyproblem.info), and [Asking Smart Questions](http://www.catb.org/esr/faqs/smart-questions.html). Here I'll list some of the "laws" of internet etiquette that I try to follow. While you are under no obligation to follow them yourself, you would be doing yourself and everyone else a favour by doing so.

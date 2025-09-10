@@ -1,8 +1,8 @@
 +++
-title="This Website"
-desc="How I built my websites."
-date="17.04.2025"
-edited="30.04.2025"
+title = "This Website"
+desc = "How I built my websites."
+date = "2025-04-17"
+edited = "2025-04-30"
 +++
 
 To be clear, I'm covering both websites, this one (notes.orangc.net) and my main webpage (orangc.net).

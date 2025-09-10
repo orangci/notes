@@ -46,7 +46,7 @@ md_parser = mistune.create_markdown(
 
 
 def format_date(date_str):
-    dt = datetime.strptime(date_str, "%d.%m.%Y")
+    dt = datetime.strptime(date_str, "%Y-%m-%d")
     return dt.strftime("%B %d, %Y"), dt.strftime("%Y-%m-%d")
 
 
@@ -154,7 +154,7 @@ def main():
             meta["src_filename"] = md_file.name
             posts_info.append((meta, html_content))
     posts_info.sort(
-        key=lambda x: datetime.strptime(x[0]["date"], "%d.%m.%Y"), reverse=True
+        key=lambda x: datetime.strptime(x[0]["date"], "%Y-%m-%d"), reverse=True
     )
     build_index(posts_info)
     build_post_files(posts_info)

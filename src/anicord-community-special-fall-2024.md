@@ -1,9 +1,9 @@
 +++
 title = 'Anicord Community Special Fall 2024'
 desc = 'Anicord Community Special Fall 2024'
-date = '26.11.2024'
-edited = "21.04.2025"
-hidden=true
+date = '2024-11-26'
+edited = "2025-04-21"
+hidden = true
 +++
 
 ***Warning: this article contains spoilers for all of [The Empty Box and Zeroth Maria](https://myanimelist.net/manga/55215/Utsuro_no_Hako_to_Zero_no_Maria).***

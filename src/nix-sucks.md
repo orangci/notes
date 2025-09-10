@@ -1,8 +1,8 @@
 +++
 title = "Nix(OS) Sucks"
 desc = "Some thoughts on Nix/NixOS, and why it sucks— but is better than everything else."
-date = "28.04.2025"
-edited = "10.09.2025"
+date = "2025-04-28"
+edited = "2025-09-10"
 +++
 
 I have been using NixOS since — according to the date of the earliest commit in my [dotfiles](https://orangc.net/dots) repository — September 8th, 2023. I started by using a barebones `configuration.nix` and a [decent enough rice](../assets/old-nix-kde-rice.png). I eventually switched to using flakes by forking [ZaneyOS](https://gitlab.com/Zaney/zaneyos), then, a few months later, scrapping it and writing my own [flake](https://orangc.net/dots).

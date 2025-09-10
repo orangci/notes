@@ -1,7 +1,7 @@
 +++
-title="A Guide to Moderation"
-desc="My thoughts on how moderation in the modern-day internet should look like."
-date="25.05.2025"
+title = "A Guide to Moderation"
+desc = "My thoughts on how moderation in the modern-day internet should look like."
+date = "2025-05-25"
 +++
 
 This post was originally a part of [this one](https://orangc.net/n/internet-etiquette). I cut it out from there as it covers a different topic. You can still consider this a part two to that post, however.

@@ -1,7 +1,7 @@
 +++
 title = 'Anicord Contract Contract Winter 2025'
 desc = 'Anicord Contract Contract Winter 2025'
-date = '01.05.2025'
+date = '2025-05-01'
 hidden = true
 +++
 
