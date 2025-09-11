@@ -1,0 +1,242 @@
+<!-- SPDX-License-Identifier: AGPL-3.0-or-later -->
+<!DOCTYPE html>
+<html lang="en" class="bg-base-100" data-theme="rosepine">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A (mostly) comprehensive list of software and hardware which I utilise in my day-to-day life." />
+    <meta property="og:title" content="orangc's notes — Soft/Hardware That I Use" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://orangc.net/" />
+    <meta property="og:image" content="https://orangc.net/leaf.png" />
+    <meta property="og:description" content="A (mostly) comprehensive list of software and hardware which I utilise in my day-to-day life." />
+    <meta name="theme-color" content="#fab387" />
+    <meta name="fediverse:creator" content="@orangc@mastodon.social">
+    <title>orangc's notes — Soft/Hardware That I Use</title>
+
+    <link rel="shortcut icon" href="../leaf.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/output.css" />
+</head>
+
+<body class="justify-center mx-auto max-w-6xl min-h-screen flex flex-col">
+    <div class="flex-grow">
+    <!-- Navbar -->
+    <nav class="max-w-7xl mx-auto px-4 py-2 flex flex-wrap justify-center sm:justify-between items-center gap-2">
+        <a class="link link-animated" href=".."><span class="icon-[tabler--notebook] me-1 size-5 -mb-1"></span>notes.orangc.net</a>
+
+        <select
+            data-select='{
+            "placeholder": "Select option...",
+            "toggleTag": "<button type=\"button\" aria-expanded=\"false\"></button>",
+            "toggleClasses": "advance-select-toggle select-disabled:pointer-events-none select-disabled:opacity-40",
+            "dropdownClasses": "advance-select-menu bg-base-200 shadow-base-200/50 shadow-lg",
+            "optionClasses": "advance-select-option selected:select-active",
+            "optionTemplate": "<div class=\"flex justify-between items-center w-full\"><span data-title></span><span class=\"icon-[tabler--check] shrink-0 size-4 text-primary hidden selected:block \"></span></div>",
+            "extraMarkup": "<span class=\"icon-[tabler--caret-down-filled] shrink-0 size-4 text-base-content absolute top-1/2 end-3 -translate-y-1/2 \"></span>"
+            }'
+            class="hidden"
+            id="theme-select">
+            <option value="rosepine">Rose Pine</option>
+            <option value="catppuccin">Catppuccin</option>
+            <option value="light">Semilatte</option>
+        </select>
+        <script>
+            const themeSelect = document.getElementById("theme-select");
+            const savedTheme = localStorage.getItem("theme");
+            if (savedTheme) {
+              document.documentElement.setAttribute("data-theme", savedTheme);
+              themeSelect.value = savedTheme;
+            }
+          
+            themeSelect.addEventListener("change", e => {
+              const theme = e.target.value;
+              document.documentElement.setAttribute("data-theme", theme);
+              localStorage.setItem("theme", theme);
+            });
+          </script>
+        </nav>
+
+    <!-- Content -->
+     <div class="mx-auto my-10 post-content text-base">
+        <h1 id="post-title" class="text-3xl">Soft/Hardware That I Use</h1>
+        <div class="flex gap-2 mb-8 items-center text-base-content/70">
+            <aside class="flex items-center">
+                <span class="icon-[tabler--eye] size-5 me-1"></span>
+                <span id="view-count"></span>
+            </aside>
+            <span class="icon-[tabler--circle-filled] size-2"></span>
+            <aside id="post-date"><span class="post_time"><time datetime="2025-09-11">September 11, 2025</time></span></aside>
+        </div>
+        <p>Here's a comprehensive list of software and hardware which I use, inspired by and for <a href="https://uses.tech">uses.tech</a>. Check out <a href="https://uses.tech">uses.tech</a> for similar /uses pages. <a href="https://orangc.net/uses">orangc.net/uses</a> redirects to this page.</p>
+<h2 id="software" onclick="navigator.clipboard.writeText(location.href.split('#')[0] + '#software')"> Software </h2><p>It is easy to discover in detail what software I use, and how they are configured, by examining my <a href="https://git.orangc.net/c/dots">NixOS flake</a>.</p>
+<h2 id="general" onclick="navigator.clipboard.writeText(location.href.split('#')[0] + '#general')"> General </h2><p>Internet Explorer-chan, don't cry...</p>
+<ul>
+<li><a href="https://www.firefox.com">Firefox</a> as my primary web browser.</li>
+<li><a href="https://www.chromium.org">Chromium</a> as the web browser which I use for school.</li>
+<li><a href="https://mpv.io">mpv</a> for playing videos.</li>
+<li><a href="https://github.com/KDE/gwenview">Gwenview</a> for viewing images.</li>
+<li><a href="https://git.dec05eba.com/gpu-screen-recorder/about">gpu-screen-recorder</a> for scren recordings.</li>
+<li><a href="https://prismlauncher.org">Prism Launcher</a> for launching and managing Minecraft instances.</li>
+</ul>
+<h3 id="development" onclick="navigator.clipboard.writeText(location.href.split('#')[0] + '#development')"> Development </h3><p>Speak to the machine.</p>
+<ul>
+<li><a href="https://python.org">Python</a> with <a href="https://docs.astral.sh/uv">uv</a> for package management and <a href="https://docs.astral.sh/ruff">ruff</a> for code formatting and linting.</li>
+<li>I am learning <a href="https://www.rust-lang.org">Rust</a>.</li>
+<li><a href="https://nixos.org">Nix</a>, the <em>language</em>.</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a> with <a href="tailwindcss.com">TailwindCSS</a> as my go-to CSS framework.</li>
+<li><a href="https://git-scm.com">Git</a>, for version control.</li>
+</ul>
+<h3 id="editors" onclick="navigator.clipboard.writeText(location.href.split('#')[0] + '#editors')"> Editors </h3><p>Just use nano.</p>
+<ul>
+<li><a href="https://vscodium.com">VSCodium</a> as my code editor.</li>
+<li><a href="https://neovim.io">Neovim</a> with the <a href="https://github.com/NotAShelf/nvf">nvf</a> configuration framework as a base, also for use as a code editor.</li>
+<li><a href="https://micro-editor.github.io">Micro</a> for quick edits or random notes.</li>
+</ul>
+<h3 id="operating-system-amp-environment" onclick="navigator.clipboard.writeText(location.href.split('#')[0] + '#operating-system-amp-environment')"> Operating System &amp; Environment </h3><p>Rice your machines declaratively!</p>
+<ul>
+<li><a href="https://android.com">Android</a> for all mobile hosts.</li>
+<li><a href="https://nixos.org">NixOS</a> as my operating system on all non-mobile hosts.</li>
+<li><a href="https://hypr.land">Hyprland</a> as my window manager on all non-mobile hosts.</li>
+<li><a href="https://gitlab.xfce.org/xfce/thunar">Thunar</a> as the file manager.</li>
+<li><a href="https://github.com/abenz1267/walker">Walker</a> as my app launcher.</li>
+<li><a href="https://github.com/Alexays/Waybar">Waybar</a> as my bar.</li>
+<li><a href="https://github.com/ErikReider/SwayNotificationCenter">SwayNotificationCenter</a> as my notification daemon.</li>
+<li><a href="https://wiki.hypr.land/Hypr-Ecosystem/hyprlock">Hyprlock</a> as my lock screen.</li>
+<li><a href="https://wiki.hypr.land/Hypr-Ecosystem/hypridle">Hypridle</a> for making the computer idle.</li>
+<li><a href="https://github.com/AMNatty/wleave">wleave</a> as my logout screen.</li>
+<li><a href="https://github.com/System64fumo/syshud">Syshud</a> for the volume/brightness OSD.</li>
+<li><a href="https://github.com/LGFae/swww">swww</a> for setting wallpapers.</li>
+</ul>
+<h3 id="cli" onclick="navigator.clipboard.writeText(location.href.split('#')[0] + '#cli')"> CLI </h3><p>Stuck in the Age of the Terminal!</p>
+<ul>
+<li><a href="https://sw.kovidgoyal.net/kitty">Kitty</a> as my terminal emulator.</li>
+<li><a href="https://fishshell.com">Fish</a> as my shell.</li>
+<li><a href="https://starship.rs">Starship</a> as my prompt.</li>
+<li><a href="https://www.gnu.org/software/tar">tar</a> for file compression.</li>
+<li><a href="https://github.com/sharkdp/diskus">diskus</a> and <a href="https://github.com/bootandy/dust">dust</a> for monitoring disk usage.</li>
+<li><a href="https://imagemagick.org">imagemagick</a>, <a href="https://ffmpeg.org">ffmpeg</a>, and <a href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a> for media manipulation.</li>
+<li><a href="https://github.com/notashelf/microfetch">microfetch</a> as my fetch, although I don't use it often.</li>
+<li><a href="https://github.com/sharkdp/bat">bat</a> as a replacement for <code>cat</code>, <a href="https://eza.rocks">eza</a> as a replacement for <code>ls</code>, <a href="https://github.com/sharkdp/fd">fd</a> as a replacement for <code>find</code>, <a href="https://github.com/chmln/sd">sd</a> as a replacement for <code>sed</code>, and <a href="https://github.com/BurntSushi/ripgrep">ripgrep</a> as a replacement for <code>grep</code>.</li>
+<li><a href="https://github.com/junegunn/fzf">fzf</a> for fuzzy finding, although I don't use this often.</li>
+<li><a href="https://github.com/ajeetdsouza/zoxide">zoxide</a> for jumping between directories more easily.</li>
+</ul>
+<h3 id="server--selfhosting" onclick="navigator.clipboard.writeText(location.href.split('#')[0] + '#server--selfhosting')"> Server / Selfhosting </h3><p>An at-home lab?! You sound like a mad scientist!</p>
+<ul>
+<li><a href="https://caddyserver.com">Caddy</a> as my web server.</li>
+<li><a href="https://developers.cloudflare.com/cloudflare-one/connections/connect-networks">Cloudflare Tunnels</a> for protecting my IP address.</li>
+<li><a href="https://github.com/C4illin/ConvertX">ConvertX</a> for quickly converting files from one filetype to another.</li>
+<li><a href="https://forgejo.org/">Forgejo</a> as my git server.</li>
+<li><a href="https://github.com/gtsteffaniak/filebrowser">Filebrowser</a> for browsing server files.</li>
+<li><a href="https://github.com/glanceapp/glance">Glance</a> as my server dashboard.</li>
+<li><a href="https://immich.app">Immich</a> as a Google Photos alternative.</li>
+<li><a href="https://github.com/sharevb/it-tools">IT-Tools</a> for handy utilities.</li>
+<li><a href="https://jellyfin.org">Jellyfin</a> for hosting and streaming media.</li>
+<li><a href="https://microbin.eu">Microbin</a> as my pastebin.</li>
+<li><a href="https://ntfy.sh">Ntfy</a> for scripting notifications.</li>
+<li><a href="https://searxng.org">SearXNG</a> as my search engine.</li>
+<li><a href="https://speedtest-tracker.dev">Speedtest Tracker</a> for monitoring internet speeds.</li>
+<li><a href="https://technitium.com">Technitium</a> as my DNS server.</li>
+<li><a href="https://umami.is">Umami</a> for analytics.</li>
+<li><a href="https://www.vaultwarden.net">Vaultwarden</a> for password management.</li>
+<li><a href="https://zipline.diced.sh">Zipline</a> for uploading and sharing media.</li>
+</ul>
+<h3 id="browser-extensions" onclick="navigator.clipboard.writeText(location.href.split('#')[0] + '#browser-extensions')"> Browser Extensions </h3><p>Extensions? How about you extend your height, shortie?</p>
+<ul>
+<li><a href="https://addons.mozilla.org/firefox/downloads/latest/ublock-origin">uBlock Origin</a> for block ads.</li>
+<li><a href="https://addons.mozilla.org/firefox/downloads/latest/mal-sync">MAL-sync</a> for syncing totally legal streaming sites to MyAnimeList.</li>
+<li><a href="https://addons.mozilla.org/firefox/downloads/latest/styl-us">Stylus</a> for custom stylesheets on any webpage.</li>
+<li><a href="https://addons.mozilla.org/firefox/downloads/latest/bitwarden-password-manager">Bitwarden</a> for password management. Hooks into my Vaultwarden instance.</li>
+<li><a href="https://addons.mozilla.org/firefox/downloads/latest/simple-translate">Simple Translate</a> for on the fly translations.</li>
+<li><a href="https://addons.mozilla.org/firefox/downloads/latest/nighttab">NightTab</a> for an easily customisable newtab.</li>
+<li><a href="https://addons.mozilla.org/firefox/downloads/latest/search-with-myanimelist">Search with MyAnimeList</a>, no, I'm not a weeb!</li>
+<li><a href="https://addons.mozilla.org/firefox/downloads/latest/catppuccin-gh-file-explorer">Catppuccin GitHub File Explorer</a>.</li>
+<li><a href="https://addons.mozilla.org/firefox/downloads/latest/tampermonkey">Tampermonkey</a> for custom userscripts. Like Stylus but for JavaScript.</li>
+<li><a href="https://addons.mozilla.org/firefox/downloads/latest/canvasblocker">CanvasBlocker</a> for blocking malicious canvas elements. No painting without my permission!</li>
+<li><a href="https://addons.mozilla.org/firefox/downloads/latest/clearurls">ClearURLs</a> keeps the URLs clear.</li>
+<li><a href="https://addons.mozilla.org/firefox/downloads/latest/enhanced-github">Enhanced GitHub</a> for some fun GitHub utilities.</li>
+<li><a href="https://addons.mozilla.org/firefox/downloads/latest/refined-github-">Refined GitHub</a> for more of the above.</li>
+</ul>
+<h2 id="hardware" onclick="navigator.clipboard.writeText(location.href.split('#')[0] + '#hardware')"> Hardware </h2><p>Let's get physical.</p>
+<h3 id="hosts" onclick="navigator.clipboard.writeText(location.href.split('#')[0] + '#hosts')"> Hosts </h3><p>Nix solves this.</p>
+<ul>
+<li>komashi ~ My main desktop; a HP EliteDesk mini PC with an Intel i5-6500T, integrated graphics, 16GiB of RAM, and a 512GiB NVMe SSD. Name is a reference to <em>Yumi and the Nightmare Painter</em>. Runs NixOS.</li>
+<li>sirius ~ Not an actual computer. A portable 128GiB USB meant to be plugged in and booted from live. Name is a reference to <em>Foundation</em>. Runs NixOS.</li>
+<li>gensokyo ~ My homelab/server. An HP EliteDesk mini PC with an Intel i7-6700, integrated graphics, 32GiB of RAM, and a 1TiB NVMe SSD. Name is a reference to Touhou. Runs NixOS.</li>
+<li>babel ~ My six year old phone. A Motorola G Power (XT2041-4). 4GiB of RAM, 64GiB storage. Display is 2300x1080 and ~16cm. Name is a reference to <em>Babel, or The Necessity of Violence</em>. Runs Android 11.</li>
+<li>asperta ~ My 11th generation Kindle. When I read books, it's primarily on asperta. Name is a reference to <em>Foundation</em>.</li>
+</ul>
+<h3 id="peripherals" onclick="navigator.clipboard.writeText(location.href.split('#')[0] + '#peripherals')"> Peripherals </h3><ul>
+<li><a href="https://electronics.sony.com/audio/headphones/headband/p/whch520-w">Sony WH-CH520</a> as my wireless headphones.</li>
+<li><a href="https://www.logitechg.com/en-us/shop/p/g305-lightspeed-wireless-gaming-mouse.910-005280">Logitech G305</a> as my wireless mouse.</li>
+<li><a href="https://www.logitech.com/en-us/shop/p/mk295-keyboard-mouse-combo.920-009782">Logitech MK295</a> as my wireless, silent keyboard.</li>
+</ul>
+
+    </div>
+
+    <script src="https://giscus.app/client.js"
+        data-repo="orangci/notes"
+        data-repo-id="R_kgDONMXqug"
+        data-category="giscus"
+        data-category-id="DIC_kwDONMXqus4CpSCY"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="transparent_dark"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
+
+    <!-- Footer -->
+     </div><footer class="footer mt-10 justify-center mx-auto pb-5">
+        <p>
+            It's <a href="https://orangc.net/time" class="btn px-1 m-0 p-0 md:p-2 btn-soft"><time id="myCurrentTime"></time></a> in my timezone
+            <span class="icon-[tabler--circle-filled] size-2 mx-1"></span>
+            <button id="openLegalModalBtn" class="btn px-1 m-0 p-0 md:p-2 btn-soft">Copyright</button>
+        </p> 
+     </footer>
+
+     <!-- License & Copyright Modal -->
+     <div id="legalModal" class="flex hidden fixed inset-0 justify-center items-center text-sm bg-base-100/80">
+        <div class="relative p-6 w-full max-w-md rounded-lg shadow-xl bg-base-300">
+            <h2 class="mb-4 text-lg font-semibold">License & Copyright</h2>
+            &copy; <span class="inline-flex text-accent">orangc</span> 2024–2025, All Rights Reserved. <br>
+            <p class="block my-2">
+                <ul class="list-disc list-inside text-left my-2">
+                    <li>This website's <em>contents</em> are licensed under the <a href="https://choosealicense.com/licenses/cc-by-sa-4.0/" class="link2">CC-BY-SA-4.0</a> license.</li>
+                    <li>This website's <em><a href="https://github.com/orangci/notes" class="link2">source code</a></em> is licensed under the <a href="https://choosealicense.com/licenses/agpl-3.0/" class="link2">GNU AGPLv3</a> license.</li>
+                </ul>
+            </p>
+        </div>
+        <script>
+            const legalModal = document.getElementById('legalModal');
+            document.getElementById('openLegalModalBtn').addEventListener('click', () => { legalModal.classList.remove('hidden'); });
+            window.addEventListener('click', (event) => { if (event.target === legalModal) { legalModal.classList.add('hidden'); } });
+        </script>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../scripts/flyonui.js"></script>
+    <script src="../scripts/current-time.js"></script>
+    <script src="../scripts/oneko.js"></script>
+    <script>
+        const spoilerClasses = [ 'text-base-300', 'bg-base-300', 'rounded-3xl', 'shadow-sm', 'shadow-base-300' ];
+        document.querySelectorAll('.spoiler').forEach(el => { el.classList.add(...spoilerClasses);
+        el.addEventListener('click', () => { el.classList.remove(...spoilerClasses); }); });
+    </script>
+    <!-- goatcounter analytics -->
+    <script>
+        let r = new XMLHttpRequest();
+        r.addEventListener('load', function() { document.querySelector('#view-count').innerText = JSON.parse(this.responseText).count })
+        let path = location.pathname
+        r.open('GET', 'https://goatcounter.orangc.net/counter/' + encodeURIComponent(path) + '.json')
+        r.send()
+    </script>
+    <script data-goatcounter="https://goatcounter.orangc.net/count" async src="//gc.zgo.at/count.js"></script>
+
+</body>
+
+</html>
