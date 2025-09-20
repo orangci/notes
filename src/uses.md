@@ -1,7 +1,7 @@
 +++
 title = "Soft/Hardware That I Use"
 desc = "A (mostly) comprehensive list of software and hardware which I utilise in my day-to-day life."
-date = "2025-09-11"
+date = "2025-09-20"
 +++
 
 Here's a comprehensive list of software and hardware which I use, inspired by and for [uses.tech](https://uses.tech). Check out [uses.tech](https://uses.tech) for similar /uses pages. [orangc.net/uses](https://orangc.net/uses) redirects to this page.
@@ -112,8 +112,11 @@ Nix solves this.
 - komashi ~ My main desktop; a HP EliteDesk mini PC with an Intel i5-6500T, integrated graphics, 16GiB of RAM, and a 512GiB NVMe SSD. Name is a reference to *Yumi and the Nightmare Painter*. Runs NixOS.
 - sirius ~ Not an actual computer. A portable 128GiB USB meant to be plugged in and booted from live. Name is a reference to *Foundation*. Runs NixOS.
 - gensokyo ~ My homelab/server. An HP EliteDesk mini PC with an Intel i7-6700, integrated graphics, 32GiB of RAM, and a 1TiB NVMe SSD. Name is a reference to Touhou. Runs NixOS.
-- babel ~ My six year old phone. A Motorola G Power (XT2041-4). 4GiB of RAM, 64GiB storage. Display is 2300x1080 and ~16cm. Name is a reference to *Babel, or The Necessity of Violence*. Runs Android 11.
+- evergarden ~ My phone. A [Motorola G86 Power](https://www.gsmarena.com/motorola_moto_g86_power_5g-13918.php); colour is Pantone Spellbound. Runs Android 15. 
 - asperta ~ My 11th generation Kindle. When I read books, it's primarily on asperta. Name is a reference to *Foundation*.
+
+**Retired hosts**:
+- babel ~ My phone from 2020, which I used from the summer of 2024 to September 20th, 2025. A [Motorola G Power](https://www.gsmarena.com/motorola_moto_g_power-10076.php). Name is a reference to *Babel, or The Necessity of Violence*. Runs Android 11.
 
 ### Peripherals
 - [Sony WH-CH520](https://electronics.sony.com/audio/headphones/headband/p/whch520-w) as my wireless headphones.
