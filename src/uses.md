@@ -1,7 +1,8 @@
 +++
 title = "Soft/Hardware That I Use"
 desc = "A (mostly) comprehensive list of software and hardware which I utilise in my day-to-day life."
-date = "2025-09-20"
+date = "2025-09-11"
+edited = "2025-09-20"
 +++
 
 Here's a comprehensive list of software and hardware which I use, inspired by and for [uses.tech](https://uses.tech). Check out [uses.tech](https://uses.tech) for similar /uses pages. [orangc.net/uses](https://orangc.net/uses) redirects to this page.
