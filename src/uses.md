@@ -17,7 +17,7 @@ Internet Explorer-chan, don't cry...
 - [Chromium](https://www.chromium.org) as the web browser which I use for school.
 - [mpv](https://mpv.io) for playing videos.
 - [Gwenview](https://github.com/KDE/gwenview) for viewing images.
-- [gpu-screen-recorder](https://git.dec05eba.com/gpu-screen-recorder/about) for scren recordings.
+- [gpu-screen-recorder](https://git.dec05eba.com/gpu-screen-recorder/about) for screen recordings.
 - [Prism Launcher](https://prismlauncher.org) for launching and managing Minecraft instances.
 
 ### Development
