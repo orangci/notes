@@ -1,0 +1,151 @@
+<!-- SPDX-License-Identifier: AGPL-3.0-or-later -->
+<!DOCTYPE html>
+<html lang="en" class="bg-base-100" data-theme="rosepine">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Email and long-form communication in the age of instant messaging." />
+    <meta property="og:title" content="orangc's notes — The Age of Instant Messaging" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://orangc.net/" />
+    <meta property="og:image" content="https://orangc.net/leaf.png" />
+    <meta property="og:description" content="Email and long-form communication in the age of instant messaging." />
+    <meta name="theme-color" content="#fab387" />
+    <meta name="fediverse:creator" content="@orangc@mastodon.social">
+    <title>orangc's notes — The Age of Instant Messaging</title>
+
+    <link rel="shortcut icon" href="../leaf.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/output.css" />
+</head>
+
+<body class="justify-center mx-auto max-w-6xl min-h-screen flex flex-col">
+    <div class="flex-grow">
+    <!-- Navbar -->
+    <nav class="max-w-7xl mx-auto px-4 py-2 flex flex-wrap justify-center sm:justify-between items-center gap-2">
+        <a class="link link-animated" href=".."><span class="icon-[tabler--notebook] me-1 size-5 -mb-1"></span>notes.orangc.net</a>
+
+        <select
+            data-select='{
+            "placeholder": "Select option...",
+            "toggleTag": "<button type=\"button\" aria-expanded=\"false\"></button>",
+            "toggleClasses": "advance-select-toggle select-disabled:pointer-events-none select-disabled:opacity-40",
+            "dropdownClasses": "advance-select-menu bg-base-200 shadow-base-200/50 shadow-lg",
+            "optionClasses": "advance-select-option selected:select-active",
+            "optionTemplate": "<div class=\"flex justify-between items-center w-full\"><span data-title></span><span class=\"icon-[tabler--check] shrink-0 size-4 text-primary hidden selected:block \"></span></div>",
+            "extraMarkup": "<span class=\"icon-[tabler--caret-down-filled] shrink-0 size-4 text-base-content absolute top-1/2 end-3 -translate-y-1/2 \"></span>"
+            }'
+            class="hidden"
+            id="theme-select">
+            <option value="rosepine">Rose Pine</option>
+            <option value="catppuccin">Catppuccin</option>
+            <option value="light">Semilatte</option>
+        </select>
+        <script>
+            const themeSelect = document.getElementById("theme-select");
+            const savedTheme = localStorage.getItem("theme");
+            if (savedTheme) {
+              document.documentElement.setAttribute("data-theme", savedTheme);
+              themeSelect.value = savedTheme;
+            }
+          
+            themeSelect.addEventListener("change", e => {
+              const theme = e.target.value;
+              document.documentElement.setAttribute("data-theme", theme);
+              localStorage.setItem("theme", theme);
+            });
+          </script>
+        </nav>
+
+    <!-- Content -->
+     <div class="mx-auto my-10 post-content text-base">
+        <h1 id="post-title" class="text-3xl">The Age of Instant Messaging</h1>
+        <div class="flex gap-2 mb-8 items-center text-base-content/70">
+            <aside class="flex items-center">
+                <span class="icon-[tabler--eye] size-5 me-1"></span>
+                <span id="view-count"></span>
+            </aside>
+            <span class="icon-[tabler--circle-filled] size-2"></span>
+            <aside id="post-date"><span class="post_time"><time datetime="2025-11-19">November 19, 2025</time></span></aside>
+        </div>
+        <p>Communication is one of the most important cogs of human society. Without a proper system of communication established, an army will fall into chaos, disorder, and even massacre, like the charge of the Light Brigade, a British cavalry unit that charged into their deaths at the hand of the Russian artillery due to a communication failure in the Battle of Balaclava in 1854. It resulted in 250 casualties across the span of just a few minutes.</p>
+<p>We started with verbal speech, developing languages, and we did this for a mighty long time. As writing systems developed, paper and ink became cheaper, and literacy rates grew higher, and we started to send each other letters. The invention of the typewriter was a great boon to this effect, and then came the invention of the telegram and finally the telephone, a modern miracle.</p>
+<p>I'm not going to discuss the telephone here, as verbal communication just isn't the same as written communication. In verbal communication, you can hear emotions in the tone of your interlocutor, and see it in their face (and the discussion of how face to face communication is different from purely verbal communication also isn't relevant here).</p>
+<p>So we arrive at the latest revolution in communication; the modern internet. Communication in the old days of the internet might've consisted of a great deal of emails, but we very swiftly moved on to instant messaging. Allow me to pose you a question; have you ever written a letter in your life? Letters for paperwork don't count; I mean a letter to a friend or family member. You most likely haven't, because people don't do that anymore.</p>
+<p>You also most likely don't write emails for personal purposes either, unless you're a little older than the rest of us. In the modern day, long-form communication has all but disappeared from our day-to-day lives. When we chat with our friends and families, we tend to do it via instant messaging, or IM as I will refer to it from here on out. We send each other short texts, usually not attempting to formulate our response or think things through before sending a message, but rather trying to respond as soon as the interlocutor sends a message. We also don't attempt to use grammar, and our vocabulary is pathetic; we heavily make use of slang and a thousand different abbreviations. In doing so, we forget part of what makes any language beautiful; the thousands of words at our disposal, sitting in our mental arsenal collecting dust. And I'm not addressing this from the moral point of view. I'm not your father, to nag you to mind your language. I'm addressing this from the point of the linguist, watching language devolve from a thing of art to a limited and primitive work of slop.</p>
+<p>Instant messaging can also become a horrible and unproductive time sink, at least in my own experience. Generally, the only IM platforms I use are Discord and WhatsApp, the latter only for family members and a handful of friends. I've wasted a great deal of time on Discord. Swapping between channels and servers, maintaining multiple meaningless conversations at once. This obviously doesn't happen to everyone, of course, but it happens to many of us, and only the chronically online are ever going to see this article (perhaps). In any case, I've spent hundreds and hundreds of hours mindlessly texting on Discord when I could've been doing something useful with my life, like coding, studying, or reading a good book.</p>
+<p>Lastly, I'd like to emphasise again the importance of formulating your thoughts before saying (or typing) something. I don't know about any useless 'alpha male' influencers who might call me feminine for this, but I do in fact care about what other people think about me, usually. I also care a lot about how I think about myself. I'd like to think well of myself. And the best strategy for this is to <em>think before you speak</em>. Really, if more people did this, the world would be a much better place. IM doesn't make this easy, however. You'll feel pressured to respond instantly, after all. So your response ends up being something you thought up on the spur of the moment, lacking real value and perhaps not being something you'd have said if you'd taken a moment longer to ponder beforehand.</p>
+<p>So what's the solution? Now, I don't believe IM is bad in of itself. IM is a tool like any other tool, so the problem is not with the tool but with the hand that wields it. As a society, we can without a doubt collectively stand to better utilise instant messaging. Personally, I've decided to reserve IM for situations where it really seems necessary; e.g., for coordination in a project that requires constant cooperation, quickly organising an appointment with someone, et cetera. These are situations where IM truly shines. But for conversations — good old email is my choice. Anyone can feel free to strike up a conversation with me at c@orangc.net.</p>
+<p>Long-form communication has been amazing for me so far. There's no longer that mental pressure to respond on the spot — I can take a week to respond to an email as far as anyone's concerned, and I don't feel bad about it in the slightest. There's no annoying notifications, or red dots begging you to click them. Nobody can instantly get my attention anymore. And that's the way it should be. I'm not trying to pretend to be some sort of supremely busy man, with a thousand meetings and appointments and mountains of work (wait, I <em>do</em> have mountains of work...) but that doesn't mean that I, or anyone else, should be at the beck and call of the social media app with the red dot nagging you to click it.</p>
+<p>What works for me might not work for you, or might be too excessive to you. My point is not to convince anyone to abandon all social media, but rather to ask that they might take a moment to consider if they are proud of their social media usage, and whether they're ready to do anything about it.</p>
+<p>Now that's quite a bit of rambling that I've done, but I wanted to get it off my chest. I'll revise this later when I actually research the effects of instant messaging in psychology papers and whatnot; I write this in a rush, as I have a class to attend. Cheers, and long live the email!</p>
+<p>—orangc</p>
+
+    </div>
+
+    <script src="https://giscus.app/client.js"
+        data-repo="orangci/notes"
+        data-repo-id="R_kgDONMXqug"
+        data-category="giscus"
+        data-category-id="DIC_kwDONMXqus4CpSCY"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="transparent_dark"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
+
+    <!-- Footer -->
+     </div><footer class="footer mt-10 justify-center mx-auto pb-5">
+        <p>
+            It's <a href="https://orangc.net/time" class="btn px-1 m-0 p-0 md:p-2 btn-soft"><time id="myCurrentTime"></time></a> in my timezone
+            <span class="icon-[tabler--circle-filled] size-2 mx-1"></span>
+            <button id="openLegalModalBtn" class="btn px-1 m-0 p-0 md:p-2 btn-soft">Copyright</button>
+        </p> 
+     </footer>
+
+     <!-- License & Copyright Modal -->
+     <div id="legalModal" class="flex hidden fixed inset-0 justify-center items-center text-sm bg-base-100/80">
+        <div class="relative p-6 w-full max-w-md rounded-lg shadow-xl bg-base-300">
+            <h2 class="mb-4 text-lg font-semibold">License & Copyright</h2>
+            &copy; <span class="inline-flex text-accent">orangc</span> 2024–2025, All Rights Reserved. <br>
+            <p class="block my-2">
+                <ul class="list-disc list-inside text-left my-2">
+                    <li>This website's <em>contents</em> are licensed under the <a href="https://choosealicense.com/licenses/cc-by-sa-4.0/" class="link2">CC-BY-SA-4.0</a> license.</li>
+                    <li>This website's <em><a href="https://github.com/orangci/notes" class="link2">source code</a></em> is licensed under the <a href="https://choosealicense.com/licenses/agpl-3.0/" class="link2">GNU AGPLv3</a> license.</li>
+                </ul>
+            </p>
+        </div>
+        <script>
+            const legalModal = document.getElementById('legalModal');
+            document.getElementById('openLegalModalBtn').addEventListener('click', () => { legalModal.classList.remove('hidden'); });
+            window.addEventListener('click', (event) => { if (event.target === legalModal) { legalModal.classList.add('hidden'); } });
+        </script>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../scripts/flyonui.js"></script>
+    <script src="../scripts/current-time.js"></script>
+    <script src="../scripts/oneko.js"></script>
+    <script>
+        const spoilerClasses = [ 'text-base-300', 'bg-base-300', 'rounded-3xl', 'shadow-sm', 'shadow-base-300' ];
+        document.querySelectorAll('.spoiler').forEach(el => { el.classList.add(...spoilerClasses);
+        el.addEventListener('click', () => { el.classList.remove(...spoilerClasses); }); });
+    </script>
+    <!-- goatcounter analytics -->
+    <script>
+        let r = new XMLHttpRequest();
+        r.addEventListener('load', function() { document.querySelector('#view-count').innerText = JSON.parse(this.responseText).count })
+        let path = location.pathname
+        r.open('GET', 'https://goatcounter.orangc.net/counter/' + encodeURIComponent(path) + '.json')
+        r.send()
+    </script>
+    <script data-goatcounter="https://goatcounter.orangc.net/count" async src="//gc.zgo.at/count.js"></script>
+
+</body>
+
+</html>
