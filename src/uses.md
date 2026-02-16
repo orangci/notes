@@ -2,7 +2,7 @@
 title = "Soft/Hardware That I Use"
 desc = "A (mostly) comprehensive list of software and hardware which I utilise in my day-to-day life."
 date = "2025-09-11"
-edited = "2025-09-20"
+edited = "2026-02-16"
 +++
 
 Here's a comprehensive list of software and hardware which I use, inspired by and for [uses.tech](https://uses.tech). Check out [uses.tech](https://uses.tech) for similar /uses pages. [orangc.net/uses](https://orangc.net/uses) redirects to this page.
@@ -11,7 +11,7 @@ Here's a comprehensive list of software and hardware which I use, inspired by an
 It is easy to discover in detail what software I use, and how they are configured, by examining my [NixOS flake](https://git.orangc.net/c/dots).
 
 ## General
-Internet Explorer-chan, don't cry...
+Internet Explorer-chan would be disappointed...
 
 - [Firefox](https://www.firefox.com) as my primary web browser.
 - [Chromium](https://www.chromium.org) as the web browser which I use for school.
@@ -53,7 +53,6 @@ Rice your machines declaratively!
 - [swww](https://github.com/LGFae/swww) for setting wallpapers.
 
 ### CLI
-Stuck in the Age of the Terminal!
 
 - [Kitty](https://sw.kovidgoyal.net/kitty) as my terminal emulator.
 - [Fish](https://fishshell.com) as my shell.
@@ -67,7 +66,7 @@ Stuck in the Age of the Terminal!
 - [zoxide](https://github.com/ajeetdsouza/zoxide) for jumping between directories more easily.
 
 ### Server / Selfhosting
-An at-home lab?! You sound like a mad scientist!
+Ishigami Senku would approve, surely.
 
 - [Caddy](https://caddyserver.com) as my web server.
 - [Cloudflare Tunnels](https://developers.cloudflare.com/cloudflare-one/connections/connect-networks) for protecting my IP address.
@@ -88,7 +87,6 @@ An at-home lab?! You sound like a mad scientist!
 - [Zipline](https://zipline.diced.sh) for uploading and sharing media.
 
 ### Browser Extensions
-Extensions? How about you extend your height, shortie?
 
 - [uBlock Origin](https://addons.mozilla.org/firefox/downloads/latest/ublock-origin) for block ads.
 - [MAL-sync](https://addons.mozilla.org/firefox/downloads/latest/mal-sync) for syncing totally legal streaming sites to MyAnimeList.
@@ -108,18 +106,43 @@ Extensions? How about you extend your height, shortie?
 Let's get physical.
 
 ### Hosts
-Nix solves this.
-
-- komashi ~ My main desktop; a HP EliteDesk mini PC with an Intel i5-6500T, integrated graphics, 16GiB of RAM, and a 512GiB NVMe SSD. Name is a reference to *Yumi and the Nightmare Painter*. Runs NixOS.
-- sirius ~ Not an actual computer. A portable 128GiB USB meant to be plugged in and booted from live. Name is a reference to *Foundation*. Runs NixOS.
-- gensokyo ~ My homelab/server. An HP EliteDesk mini PC with an Intel i7-6700, integrated graphics, 32GiB of RAM, and a 1TiB NVMe SSD. Name is a reference to Touhou. Runs NixOS.
-- evergarden ~ My phone. A [Motorola G86 Power](https://www.gsmarena.com/motorola_moto_g86_power_5g-13918.php); colour is Pantone Spellbound. Runs Android 15. 
-- asperta ~ My 11th generation Kindle. When I read books, it's primarily on asperta. Name is a reference to *Foundation*.
-
-**Retired hosts**:
-- babel ~ My phone from 2020, which I used from the summer of 2024 to September 20th, 2025. A [Motorola G Power](https://www.gsmarena.com/motorola_moto_g_power-10076.php). Name is a reference to *Babel, or The Necessity of Violence*. Runs Android 11.
-
-### Peripherals
-- [Sony WH-CH520](https://electronics.sony.com/audio/headphones/headband/p/whch520-w) as my wireless headphones.
-- [Logitech G305](https://www.logitechg.com/en-us/shop/p/g305-lightspeed-wireless-gaming-mouse.910-005280) as my wireless mouse.
-- [Logitech MK295](https://www.logitech.com/en-us/shop/p/mk295-keyboard-mouse-combo.920-009782) as my wireless, silent keyboard.
+Retired devices will be in *italics*.
+#### desktops
+- **komashi**:
+ - Name: *Yumi and the Nightmare Painter*
+ - Model: HP EliteDesk Mini PC
+ - CPU: Intel i5-6500T
+ - GPU: Intel integrated graphics
+ - RAM: 16GiB DDR4
+ - SSD: 512GiB NVMe
+ - OS: NixOS
+#### servers
+- **gensokyo**:
+ - Name: *Touhou*
+ - Model: HP EliteDesk Mini PC
+ - CPU: i7-6700T
+ - GPU: Intel integrated graphics
+ - RAM: 32GiB DDR4
+ - SSD: 1TiB NVMe
+ - OS: NixOS
+#### phones
+- ***babel***: 
+ - Name: *Babel, or The Necessity of Violence*
+ - Model: [Motorola G Power](https://www.gsmarena.com/motorola_moto_g_power-10076.php)
+ - OS: Android 11
+ - Used: 2024 Summer – 2025-09-20
+- **evergarden**:
+ - Name: *Violet Evergarden*
+ - Model: [Motorola G86 Power 5G](https://www.gsmarena.com/motorola_moto_g86_power_5g-13918.php)
+ - OS: Android 16
+ - Colour: Pantone Spellbound
+ - Used: 2025-09-20 – Present
+#### e-readers
+- **asperta**:
+ - Name: *Foundation*
+ - Model: Kindle 11th generation
+ - Colour: Blue
+#### peripherals
+- **Headset** (wireless): [Sony WH-CH520](https://electronics.sony.com/audio/headphones/headband/p/whch520-w)
+- **Mouse** (wireless): [Logitech G305](https://www.logitechg.com/en-us/shop/p/g305-lightspeed-wireless-gaming-mouse.910-005280)
+- **Keyboard** (wireless, silent): [Logitech MK295](https://www.logitech.com/en-us/shop/p/mk295-keyboard-mouse-combo.920-009782)
