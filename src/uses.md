@@ -2,7 +2,7 @@
 title = "Soft/Hardware That I Use"
 desc = "A (mostly) comprehensive list of software and hardware which I utilise in my day-to-day life."
 date = "2025-09-11"
-edited = "2026-02-16"
+edited = "2026-02-23"
 +++
 
 Here's a comprehensive list of software and hardware which I use, inspired by and for [uses.tech](https://uses.tech). Check out [uses.tech](https://uses.tech) for similar /uses pages. [orangc.net/uses](https://orangc.net/uses) redirects to this page.
@@ -72,7 +72,7 @@ Ishigami Senku would approve, surely.
 - [Cloudflare Tunnels](https://developers.cloudflare.com/cloudflare-one/connections/connect-networks) for protecting my IP address.
 - [ConvertX](https://github.com/C4illin/ConvertX) for quickly converting files from one filetype to another.
 - [Forgejo](https://forgejo.org/) as my git server.
-- [Filebrowser](https://github.com/gtsteffaniak/filebrowser) for browsing server files.
+- [Copyparty](https://github.com/9001/copyparty) as my file server.
 - [Glance](https://github.com/glanceapp/glance) as my server dashboard.
 - [Immich](https://immich.app) as a Google Photos alternative.
 - [IT-Tools](https://github.com/sharevb/it-tools) for handy utilities.
