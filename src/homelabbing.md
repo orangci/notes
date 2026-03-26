@@ -37,7 +37,7 @@ The list of things I use my homelab for is long, and it only grows over time. Yo
 ## Hardware
 Running a homelab requires an at-home data center. You'll need the likes of Ryzen Threadrippers.. wait, wrong script! I'm sorry!
 
-You can run a homelab on a potato, if your potato comes with an ethernet port. Unless you're running a heavy duty game server such as Minecraft, or selfhosting slopware (AI clankers), please don't fall under the illusion that you need any special hardware. At the time of writing, one of my friends uses some laptop as his homelab. Personally, I shilled out roughly 800 SAR to buy an HP EliteDesk mini PC. It's small, and that's mighty convenient. It rocks a modest Intel i5-6500T with integrated graphics and 32GIB of DDR4 RAM (I don't use all that RAM).
+You can run a homelab on a potato, if your potato comes with an ethernet port. Unless you're running a heavy duty game server such as Minecraft, or selfhosting slopware (AI clankers), please don't fall under the illusion that you need any special hardware. At the time of writing, one of my friends uses some laptop as his homelab. Personally, I shilled out roughly 800 SAR to buy an HP EliteDesk mini PC. It's small, and that's mighty convenient. It rocks a modest Intel i7-6700T with integrated graphics and 32GIB of DDR4 RAM (I don't use all that RAM).
 
 To recap: computer, ethernet cable (optional, but please, don't use WiFi). Not much else, really! Any spare computer will do. Optionally, an external storage solution of some sort, which I'll talk about later in this article.
 
