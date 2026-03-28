@@ -2,10 +2,11 @@
 title = "The Joys of Homelabbing"
 desc = "My long and happily fruitful journey with homelabbing."
 date = "2026-03-26"
+edited = "2026-03-28"
 +++
 *NOTE: Bit of a draft? Will update more later, I feel like I'm missing something but I'm not sure so I'll just publish it...*
 
-A homelab is an at-home server, a computer setup usually physically inside your house and entirely under your control (or so you'd hope).
+A [homelab](https://en.wikipedia.org/wiki/Home_server) is an at-home server, a computer setup usually physically inside your house and entirely under your control (or so you'd hope).
 
 It's very useful for a wide assortment of things digitally, especially in this day and age, where mega-corporations all but force us to use their products and services, either at the price of your data and privacy (without your consent), your money, or both.
 
@@ -17,22 +18,22 @@ I could go into a lot more detail about why homelabbing is amazing and you shoul
 The list of things I use my homelab for is long, and it only grows over time. You can see some of the services I host over at my [Glance dashboard](https://glance.orangc.net). Some of the notable ones are:
 
 - [Immich](https://immich.app): An excellent alternative to Google Photos.
-- Vaultwarden: Bitwarden, but selfhosted. I don't feel very safe with my passwords on someone else's server, somewhere.
-- Cryptpad: All in one alternative to Google Docs, Slides, Sheets, et cetera.
-- Forgejo: Alternative to GitHub.
-- Ntfy: Possibly the most awesome thing on this list, one that I've yet to use to its fullest capabilities. Script with Ntfy to send notifications to your phone or to other places.
-- Copyparty: An amazing file server. See it at work [here](https://orang.ci/walls) with my wallpaper collection.
-- SearXNG: Alternative to Google itself, a search engine.
-- Jellyfin: Organise and watch media of all sorts. With a torrenting setup, this is a superior alternative to Netflix.
-- Technitium: Authoritative DNS server 
-- Caddy: Web server responsible for reverse proxying all those services 
-- Glance: Dashboard for keeping track of things 
-- Zipline: Image server
-- Microbin: Simple pastebin
-- Umami: Privacy-respecting website analytics
+- [Vaultwarden](https://www.vaultwarden.net): Bitwarden, but selfhosted. I don't feel very safe with my passwords on someone else's server, somewhere.
+- [Cryptpad](https://cryptpad.org/): All in one alternative to Google Docs, Slides, Sheets, et cetera.
+- [Forgejo](https://cryptpad.org: Alternative to GitHub.
+- [Ntfy](https://ntfy.sh): Possibly the most awesome thing on this list, one that I've yet to use to its fullest capabilities. Script with Ntfy to send notifications to your phone or to other places.
+- [Copyparty](https://github.com/9001/copyparty): An amazing file server. See it at work [here](https://orang.ci/walls) with my wallpaper collection.
+- [SearXNG](https://github.com/searxng/searxng): Alternative to Google itself, a search engine.
+- [Jellyfin](https://jellyfin.org/): Organise and watch media of all sorts. With a torrenting setup, this is a superior alternative to Netflix.
+- [Technitium](https://technitium.com/dns/): Authoritative DNS server 
+- [Caddy](https://caddyserver.com/): Web server responsible for reverse proxying all those services 
+- [Glance](https://github.com/glanceapp/glance): Dashboard for keeping track of things 
+- [Zipline](https://github.com/glanceapp/glance): Image server
+- [Microbin](https://microbin.eu): Simple pastebin
+- [Umami](https://umami.is): Privacy-respecting website analytics
+- A [Matrix](https://matrix.org) homeserver 
+- A [Minecraft](https://minecraft.net) server
 - More that I will not list here.
-- A Matrix homeserver 
-- A Minecraft server
 
 ## Hardware
 Running a homelab requires an at-home data center. You'll need the likes of Ryzen Threadrippers.. wait, wrong script! I'm sorry!
@@ -47,8 +48,6 @@ Everyone loves this part. It's the most enjoyable, soothing, even *relaxing* par
 Nobody has ever said that, but humour me a little...
 
 My setup does not utilise port forwarding anywhere at all nor expose my public IP anywhere either, and good riddance to both of those things.
-
-TODO: Draw a diagram for this because I am not very good at explaining things
 
 Before I delve into my explanation, I'll quickly explain what Tailscale is and Cloudflare Tunnels are. 
 
@@ -76,7 +75,7 @@ For a third layer of redundancy, I also plug in a USB stick that I have every fe
 If anyone were to smash gensokyo with a hammer (please do not, my poor wallet!), I would not lose any data. I would also be able to bring it back to life in minutes on another computer because of NixOS reproducibility...
 
 ## Mandatory NixOS Shilling
-Gensokyo runs on NixOS. I would say that perhaps the biggest portion of my NixOS flake is dedicated to server related modules, although I'm not quite sure about it.
+Gensokyo runs on [NixOS](https://nixos.org). I would say that perhaps the biggest portion of my NixOS flake is dedicated to server related modules, although I'm not quite sure about it.
 
 I think that there is nowhere the advantages and perks of NixOS shine more than a server. Servers are devices that are much more unstable and volatile at least in my own experience; we're always tinkering with them, and often times move them from place to place, et cetera.
 
@@ -85,6 +84,7 @@ Declarativity makes this process so much easier. Especially with secrets managem
 Modularity makes my server modules easily togglable. I can shrimply toggle off modules.server.immich.enable, and Immich is gone.
 
 TODO: I did not do a good job of shilling Nix here
+
 ## Concluding Thoughts
 Homelabbing is a deep rabbit hole that never truly ends. I've personally reached a situation where I'm happy with the current state of my homelab, but that by no means indicates that I'm content to now stop and say, "alright, I'll just let it run now, I won't mess with it anymore".
 
