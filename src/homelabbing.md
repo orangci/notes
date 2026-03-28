@@ -20,7 +20,7 @@ The list of things I use my homelab for is long, and it only grows over time. Yo
 - [Immich](https://immich.app): An excellent alternative to Google Photos.
 - [Vaultwarden](https://www.vaultwarden.net): Bitwarden, but selfhosted. I don't feel very safe with my passwords on someone else's server, somewhere.
 - [Cryptpad](https://cryptpad.org/): All in one alternative to Google Docs, Slides, Sheets, et cetera.
-- [Forgejo](https://forgejo.org) Alternative to GitHub.
+- [Forgejo](https://forgejo.org): Alternative to GitHub.
 - [Ntfy](https://ntfy.sh): Possibly the most awesome thing on this list, one that I've yet to use to its fullest capabilities. Script with Ntfy to send notifications to your phone or to other places.
 - [Copyparty](https://github.com/9001/copyparty): An amazing file server. See it at work [here](https://orang.ci/walls) with my wallpaper collection.
 - [SearXNG](https://github.com/searxng/searxng): Alternative to Google itself, a search engine.
