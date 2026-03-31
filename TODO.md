@@ -1,0 +1,2 @@
+- is there some better way to do viewcounting.. :c
+- please style the RSS bro it's so ugly when it's not formatted bro please

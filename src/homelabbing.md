@@ -4,7 +4,6 @@ desc = "My long and happily fruitful journey with homelabbing."
 date = "2026-03-26"
 edited = "2026-03-28"
 +++
-*NOTE: Bit of a draft? Will update more later, I feel like I'm missing something but I'm not sure so I'll just publish it...*
 
 A [homelab](https://en.wikipedia.org/wiki/Home_server) is an at-home server, a computer setup usually physically inside your house and entirely under your control (or so you'd hope).
 
@@ -83,7 +82,7 @@ Declarativity makes this process so much easier. Especially with secrets managem
 
 Modularity makes my server modules easily togglable. I can shrimply toggle off modules.server.immich.enable, and Immich is gone.
 
-TODO: I did not do a good job of shilling Nix here
+I'm really just touching on how incredibly useful NixOS is in the homelabbing environment. Nix.. solves this..
 
 ## Concluding Thoughts
 Homelabbing is a deep rabbit hole that never truly ends. I've personally reached a situation where I'm happy with the current state of my homelab, but that by no means indicates that I'm content to now stop and say, "alright, I'll just let it run now, I won't mess with it anymore".
